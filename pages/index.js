@@ -6,7 +6,7 @@ import sections from '../data/sections';
 export default function Home() {
   const title = 'How to Algo NFT';
   const description =
-    'Brief tutorials explaining how to create, buy, and sell NFTs on the Algorand blockchain';
+    'Everything you need to know about how to create, buy, and sell NFTs on the Algorand blockchain.';
 
   return (
     <div>
