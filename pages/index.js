@@ -18,7 +18,9 @@ export default function Home() {
 
       <main>
         <Container>
-          <h2 className='mb-8 text-lg font-bold'>I need help...</h2>
+          <div className='px-5 lg:px-0'>
+            <h2 className='mb-8 text-lg font-bold'>I need help...</h2>
+          </div>
 
           <div className='space-y-12'>
             {sections.map((section, index) => (

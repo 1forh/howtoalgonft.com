@@ -3,7 +3,7 @@ import TwitterLink from './TwitterLink';
 
 function Footer() {
   return (
-    <div className='pt-48 pb-12 space-y-8 text-center'>
+    <div className='pt-24 pb-12 space-y-8 text-center lg:pt-48'>
       <p className='flex justify-center'>
         <TwitterLink />
       </p>

@@ -5,7 +5,7 @@ import TwitterLink from './TwitterLink';
 
 function Header() {
   return (
-    <div className='mt-5 mb-8'>
+    <div className='px-5 mt-5 mb-8 lg:px-0'>
       <Container>
         <div className='flex items-center justify-between'>
           <div>
