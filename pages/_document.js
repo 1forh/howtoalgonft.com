@@ -48,8 +48,8 @@ export default class MyDocument extends Document {
             href='/favicons/safari-pinned-tab.svg'
             color='#202020'
           />
-          <meta name='msapplication-TileColor' content='#e5ffd7' />
-          <meta name='theme-color' content='#ffffff' />
+          <meta name='msapplication-TileColor' content='#171717' />
+          <meta name='theme-color' content='#171717' />
 
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link

@@ -11,7 +11,7 @@ function Footer() {
         Created by{' '}
         <a
           href='https://twitter.com/minneralgo'
-          className='font-medium text-indigo-300 hover:underline'
+          className='font-medium text-green-300 hover:underline'
         >
           Minner.Algo
         </a>

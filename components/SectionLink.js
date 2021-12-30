@@ -13,7 +13,7 @@ function SectionLink({ link }) {
       >
         <div>
           <h4 className='text-lg font-bold'>{link.title}</h4>
-          <p className='text-sm font-medium text-indigo-300 hover:underline'>
+          <p className='text-sm font-medium text-green-300 hover:underline'>
             {formattedLink}
           </p>
         </div>
