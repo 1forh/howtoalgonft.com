@@ -97,19 +97,58 @@ const sections = [
     title: 'Buying an NFT',
     description:
       "Support artists and NFT collections and invest your algos by buying NFTs on the Algorand blockchain. Here's how.",
-    links: [],
+    links: [
+      {
+        title: 'Buying an NFT on AB2 Gallery',
+        description: 'All you need to know to buy an NFT on AB2 Gallery.',
+        link: '/how-to-buy-nfts-on-ab2-gallery',
+        internal: true,
+      },
+      {
+        title: 'Buying an NFT on Rand Gallery',
+        description: 'All you need to know to buy an NFT on Rand Gallery.',
+        link: '/how-to-buy-nfts-on-rand-gallery',
+        internal: true,
+      },
+    ],
   },
   {
     title: 'Minting an NFT',
     description:
       'Learn how to create your own NFTs on the Algorand blockchain.',
-    links: [],
+    links: [
+      {
+        title: 'Minting an NFT on AB2 Gallery',
+        description: 'All you need to know to mint an NFT on AB2 Gallery.',
+        link: '/how-to-mint-nfts-on-ab2-gallery',
+        internal: true,
+      },
+      {
+        title: 'Minting an NFT on Rand Gallery',
+        description: 'All you need to know to mint an NFT on Rand Gallery.',
+        link: '/how-to-mint-nfts-on-rand-gallery',
+        internal: true,
+      },
+    ],
   },
   {
     title: 'Selling an NFT',
     description:
       "Now for the section you've been waiting for. Selling an NFT is a great way to earn Algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.",
-    links: [],
+    links: [
+      {
+        title: 'Selling an NFT on AB2 Gallery',
+        description: 'All you need to know to sell an NFT on AB2 Gallery.',
+        link: '/how-to-sell-nfts-on-ab2-gallery',
+        internal: true,
+      },
+      {
+        title: 'Selling an NFT on Rand Gallery',
+        description: 'All you need to know to sell an NFT on Rand Gallery.',
+        link: '/how-to-sell-nfts-on-rand-gallery',
+        internal: true,
+      },
+    ],
   },
   {
     title: 'Adding ARC69 data to my Algorand NFTs',

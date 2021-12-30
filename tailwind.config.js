@@ -9,6 +9,21 @@ module.exports = {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#FFFFFE',
+            a: {
+              color: '#87EFAC',
+            },
+            h1: {
+              color: '#FFFFFE',
+              fontSize: '24px',
+              fontWeight: 'bold',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
