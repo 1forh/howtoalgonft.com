@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 export default class MyDocument extends Document {
@@ -61,9 +62,10 @@ export default class MyDocument extends Document {
             rel='stylesheet'
           />
         </Head>
-        <body className='bg-black font-body text-neutral-50'>
+        <body className='bg-neutral-900 font-body text-neutral-50'>
           <Header />
           <Main />
+          <Footer />
           <NextScript />
         </body>
       </Html>

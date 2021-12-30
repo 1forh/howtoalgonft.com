@@ -2,7 +2,7 @@ const sections = [
   {
     title: 'Creating a wallet',
     description:
-      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
     links: [
       {
         title: 'Create a New Account on the Algorand Wallet app',
@@ -25,7 +25,7 @@ const sections = [
       {
         title: 'Setup My Algo Wallet',
         description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh.',
         link: 'https://yieldly.finance/resources/myalgowallet-setup/',
         logos: [
           {
@@ -34,6 +34,59 @@ const sections = [
             link: 'https://wallet.myalgo.com/home',
           },
         ],
+      },
+    ],
+  },
+  {
+    title: 'Funding a wallet',
+    description:
+      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+    links: [
+      {
+        title:
+          'Transferring Algos from an Exchange to Algorand Wallet on Coinbase',
+        description:
+          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+        link: 'https://algorandwallet.com/support/getting-started/transfer-algos-from-exchange-to-algowallet',
+      },
+    ],
+  },
+  {
+    title: 'Buying an NFT',
+    description:
+      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+    links: [
+      {
+        title: 'Lorem ipsum',
+        description:
+          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+        link: 'https://www.google.com',
+      },
+    ],
+  },
+  {
+    title: 'Minting an NFT',
+    description:
+      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+    links: [
+      {
+        title: 'Lorem ipsum',
+        description:
+          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+        link: 'https://www.google.com',
+      },
+    ],
+  },
+  {
+    title: 'Selling an NFT',
+    description:
+      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+    links: [
+      {
+        title: 'Lorem ipsum',
+        description:
+          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+        link: 'https://www.google.com',
       },
     ],
   },
