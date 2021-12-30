@@ -21,6 +21,9 @@ module.exports = {
               fontSize: '24px',
               fontWeight: 'bold',
             },
+            img: {
+              borderRadius: '5px',
+            },
           },
         },
       },
