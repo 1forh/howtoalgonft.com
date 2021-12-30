@@ -124,6 +124,38 @@ const sections = [
       },
     ],
   },
+  {
+    title: 'Websites to buy, sell, and mint Algorand NFts',
+    description: '',
+    links: [
+      {
+        title: 'AB2 Gallery',
+        description:
+          '"AB2 Gallery is a decentralized marketplace for crypto art assets secured on the Algorand blockchain."',
+        link: 'https://ab2.gallery',
+        logos: [],
+      },
+      {
+        title: 'Rand Gallery',
+        description: '"Enjoy sustainable Algorand NFTs! 🪴🖼️🌱"',
+        link: 'https://www.randgallery.com',
+        logos: [],
+      },
+      {
+        title: 'algogems',
+        description:
+          '"Algogems is the open NFT marketplace for the Algorand blockchain. It allows artists to mint and auction their NFT for free, and provides a trading platform for NFT collectors."',
+        link: 'https://algogems.io',
+        logos: [],
+      },
+      {
+        title: 'AlgoxNFT',
+        description:
+          'AlgoxNFT is an auction house running on Algorand smart contracts',
+        link: 'https://algoxnft.com',
+      },
+    ],
+  },
 ];
 
 export default sections;
