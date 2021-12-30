@@ -22,7 +22,7 @@ module.exports = {
               fontWeight: 'bold',
             },
             img: {
-              borderRadius: '5px',
+              borderRadius: '8px',
             },
           },
         },
