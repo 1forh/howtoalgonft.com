@@ -2,12 +2,12 @@ const sections = [
   {
     title: 'Creating a wallet',
     description:
-      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+      'Before anything else, you need to create a wallet. This is the place where you will store your algos and NFTs.',
     links: [
       {
         title: 'Create a New Account on the Algorand Wallet app',
         description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+          'Learn how to create a new account on the Algorand Wallet app. You can get the app for iOS and Android.',
         link: 'https://algorandwallet.com/support/getting-started/creating-a-new-account',
         logos: [
           {
@@ -25,7 +25,7 @@ const sections = [
       {
         title: 'Setup My Algo Wallet',
         description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh.',
+          '"Here’s a handy guide to setting up your My Algo Wallet."',
         link: 'https://yieldly.finance/resources/myalgowallet-setup/',
         logos: [
           {
@@ -40,13 +40,13 @@ const sections = [
   {
     title: 'Funding a wallet',
     description:
-      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+      "In order to buy, sell, and hodl Algorand NFTs, you're gonna need some algos. Here is what you need to know to fund your wallet.",
     links: [
       {
         title:
           'Transferring Algos from an Exchange to Algorand Wallet on Coinbase',
         description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
+          '"On the Algorand Blockchain, Algos are the native currency that are needed to send transactions, add assets, and interact with applications. By the end of this tutorial, you’ll have successfully transferred Algos from an exchange to your Algorand Wallet."',
         link: 'https://algorandwallet.com/support/getting-started/transfer-algos-from-exchange-to-algowallet',
       },
     ],
@@ -54,7 +54,7 @@ const sections = [
   {
     title: 'Buying an NFT',
     description:
-      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+      "Support artists and NFT collections and invest your algos by buying NFTs on the Algorand blockchain. Here's how.",
     links: [
       {
         title: 'Lorem ipsum',
@@ -67,7 +67,7 @@ const sections = [
   {
     title: 'Minting an NFT',
     description:
-      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+      'Learn how to create your own NFTs on the Algorand blockchain.',
     links: [
       {
         title: 'Lorem ipsum',
@@ -80,13 +80,26 @@ const sections = [
   {
     title: 'Selling an NFT',
     description:
-      'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh',
+      "Now for the section you've been waiting for. Selling an NFT is a great way to earn Algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.",
     links: [
       {
         title: 'Lorem ipsum',
         description:
           'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
         link: 'https://www.google.com',
+      },
+    ],
+  },
+  {
+    title: 'Adding ARC69 data to my Algorand NFTs',
+    description:
+      'The ARC69 specification allows you to add traits to your NFTs. Learn how to add ARC69 data to your NFTs.',
+    links: [
+      {
+        title: 'How to add ARC69 JSON to your existing ASAs',
+        description:
+          'You can use either NFT Explorer or AlgoDesk to update the ARC69 JSON for your NFTs.',
+        link: 'https://github.com/algokittens/arc69/blob/master/pre-existing-NFTs.md',
       },
     ],
   },

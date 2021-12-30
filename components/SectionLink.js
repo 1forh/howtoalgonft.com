@@ -23,7 +23,7 @@ function SectionLink({ link }) {
         <div className='flex items-center space-x-8'>
           {link.logos.map((logo, index) => (
             <div key={index} className='flex justify-center'>
-              <a href={logo.link}>
+              <a href={logo.link} target='_blank' rel='noreferrer'>
                 <img src={logo.src} alt={logo.alt} className='h-12' />
               </a>
             </div>
