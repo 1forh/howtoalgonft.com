@@ -3,9 +3,11 @@ import SectionLink from './SectionLink';
 
 function Section({ section }) {
   const { title, description, links } = section;
+  // convert title to id
+  const id = title.toLowerCase().replace(/ /g, '-');
 
   return (
-    <div className='space-y-5'>
+    <div id={id} className='space-y-5'>
       <div className='px-5 space-y-2 lg:px-0'>
         <h3 className='text-xl font-bold'>{title}</h3>
         <p className='opacity-50'>{description}</p>

@@ -3,18 +3,14 @@ import Article from '../components/Article';
 import Helmet from '../components/Helmet';
 
 function HowToBuyNFTsOnAB2Gallery() {
-  const title = 'How to Buy NFTs on AB2 Gallery - How to Algo NFT';
+  const title = 'How to Buy NFTs on AB2 Gallery';
   const description = 'Quick overview on how to buy NFTs on AB2 Gallery.';
 
   return (
     <Article title={title}>
       <Helmet title={title} description={description} />
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-        nemo consequuntur quae quidem? Officia rerum facilis explicabo omnis
-        cupiditate nam?
-      </p>
+      <p>{description}</p>
 
       <img
         src='/uploads/ab2-gallery-step-1.png'

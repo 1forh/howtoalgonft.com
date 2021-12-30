@@ -3,6 +3,7 @@ const sections = [
     title: 'Creating a wallet',
     description:
       'Before anything else, you need to create a wallet. This is where you will store your algos and NFTs.',
+    showInTableOfContents: true,
     links: [
       {
         title: 'Create a New Account on the Algorand Wallet app',
@@ -47,6 +48,7 @@ const sections = [
     title: 'Funding a wallet',
     description:
       "Before you can buy, sell, and hodl Algorand NFTs, you're gonna need some algos. Here is what you need to know to fund your wallet.",
+    showInTableOfContents: true,
     links: [
       {
         title:
@@ -97,6 +99,7 @@ const sections = [
     title: 'Buying an NFT',
     description:
       "Support artists and NFT collections and invest your algos by buying NFTs on the Algorand blockchain. Here's how.",
+    showInTableOfContents: true,
     links: [
       {
         title: 'Buying an NFT on AB2 Gallery',
@@ -116,6 +119,7 @@ const sections = [
     title: 'Minting an NFT',
     description:
       'Learn how to create your own NFTs on the Algorand blockchain.',
+    showInTableOfContents: true,
     links: [
       {
         title: 'Minting an NFT on AB2 Gallery',
@@ -135,6 +139,7 @@ const sections = [
     title: 'Selling an NFT',
     description:
       "Now for the section you've been waiting for. Selling an NFT is a great way to earn Algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.",
+    showInTableOfContents: true,
     links: [
       {
         title: 'Selling an NFT on AB2 Gallery',
@@ -154,6 +159,7 @@ const sections = [
     title: 'Adding ARC69 data to my Algorand NFTs',
     description:
       'The ARC69 specification allows you to add attributes/traits to your NFTs.',
+    showInTableOfContents: false,
     links: [
       {
         title: 'All you need to know about ARC69',
@@ -166,6 +172,7 @@ const sections = [
   {
     title: 'Websites to buy, sell, and mint Algorand NFts',
     description: '',
+    showInTableOfContents: false,
     links: [
       {
         title: 'AB2 Gallery',

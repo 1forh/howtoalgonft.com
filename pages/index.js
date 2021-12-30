@@ -2,18 +2,21 @@ import Helmet from '../components/Helmet';
 import Container from '../components/Container';
 import Section from '../components/Section';
 import sections from '../data/sections';
+import TableOfContents from '../components/TableOfContents';
 
 export default function Home() {
-  const title = 'How to Algo NFT';
   const description =
     'Everything you need to know about how to create, buy, and sell NFTs on the Algorand blockchain.';
 
   return (
     <div>
-      <Helmet title={title} description={description} />
+      <Helmet description={description} />
 
       <main>
         <Container>
+          <div className='px-4 mb-8 lg:px-0'>
+            <TableOfContents />
+          </div>
           <div className='space-y-14'>
             {sections.map((section, index) => (
               <Section section={section} key={index} />

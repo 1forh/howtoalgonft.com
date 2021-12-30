@@ -4,7 +4,7 @@ import Head from 'next/head';
 function Helmet({ title, description }) {
   return (
     <Head>
-      <title>{title}</title>
+      <title>{title ? `${title} - How to Algo NFT` : 'How to Algo NFT'}</title>
       <meta name='description' content={description} />
 
       <meta property='og:title' content={title} />
