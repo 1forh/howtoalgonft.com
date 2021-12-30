@@ -2,7 +2,7 @@ const sections = [
   {
     title: 'Creating a wallet',
     description:
-      'Before anything else, you need to create a wallet. This is the place where you will store your algos and NFTs.',
+      'Before anything else, you need to create a wallet. This is where you will store your algos and NFTs.',
     links: [
       {
         title: 'Create a New Account on the Algorand Wallet app',
@@ -35,12 +35,18 @@ const sections = [
           },
         ],
       },
+      {
+        title: 'Algorand Wallet or MyAlgo Wallet?',
+        description:
+          "You don't have to choose between the two. If you create a wallet via the Algorand Wallet app, you can import the wallet into MyAlgo, vice versa.",
+        link: 'https://www.reddit.com/r/AlgorandOfficial/comments/onr1lh/algorand_wallet_or_myalgo_wallet',
+      },
     ],
   },
   {
     title: 'Funding a wallet',
     description:
-      "In order to buy, sell, and hodl Algorand NFTs, you're gonna need some algos. Here is what you need to know to fund your wallet.",
+      "Before you can buy, sell, and hodl Algorand NFTs, you're gonna need some algos. Here is what you need to know to fund your wallet.",
     links: [
       {
         title:
@@ -48,6 +54,42 @@ const sections = [
         description:
           '"On the Algorand Blockchain, Algos are the native currency that are needed to send transactions, add assets, and interact with applications. By the end of this tutorial, you’ll have successfully transferred Algos from an exchange to your Algorand Wallet."',
         link: 'https://algorandwallet.com/support/getting-started/transfer-algos-from-exchange-to-algowallet',
+        logos: [
+          {
+            src: 'coinbase.svg',
+            alt: 'Coinbase - Buy and sell Algorand',
+            link: 'https://www.coinbase.com/price/algorand',
+            heightClass: 'h-8',
+          },
+        ],
+      },
+      {
+        title: 'How to buy Algorand on Kraken',
+        description:
+          '"Algorand differentiates its technology through design choices that make it easier for users to help operate the network and be awarded the new ALGO cryptocurrency it creates."',
+        link: 'https://www.kraken.com/en-us/learn/buy-algorand-algo',
+        logos: [
+          {
+            src: 'kraken.svg',
+            alt: 'Kraken - Buy and sell Algorand',
+            link: 'https://www.kraken.com/en-us/prices/algo-algorand-price-chart/usd-us-dollar?interval=1m',
+            heightClass: 'h-6',
+          },
+        ],
+      },
+      {
+        title: 'Buy and transfer Algorand to your Ledger hardware wallet',
+        description:
+          'This will explain how to use the Ledger hardware wallet to securely store your Algorand and NFTs.',
+        link: 'https://www.ledger.com/buy/algorand',
+        logos: [
+          {
+            src: 'ledger.svg',
+            alt: 'Ledger - Buy and sell Algorand',
+            link: 'https://www.ledger.com',
+            heightClass: 'h-10',
+          },
+        ],
       },
     ],
   },
@@ -55,51 +97,30 @@ const sections = [
     title: 'Buying an NFT',
     description:
       "Support artists and NFT collections and invest your algos by buying NFTs on the Algorand blockchain. Here's how.",
-    links: [
-      {
-        title: 'Lorem ipsum',
-        description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
-        link: 'https://www.google.com',
-      },
-    ],
+    links: [],
   },
   {
     title: 'Minting an NFT',
     description:
       'Learn how to create your own NFTs on the Algorand blockchain.',
-    links: [
-      {
-        title: 'Lorem ipsum',
-        description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
-        link: 'https://www.google.com',
-      },
-    ],
+    links: [],
   },
   {
     title: 'Selling an NFT',
     description:
       "Now for the section you've been waiting for. Selling an NFT is a great way to earn Algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.",
-    links: [
-      {
-        title: 'Lorem ipsum',
-        description:
-          'Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit. Curabitur condimentum, justo non pulvinar tempus, eros augue posuere nibh, sed scelerisque eros velit vel velit.',
-        link: 'https://www.google.com',
-      },
-    ],
+    links: [],
   },
   {
     title: 'Adding ARC69 data to my Algorand NFTs',
     description:
-      'The ARC69 specification allows you to add traits to your NFTs. Learn how to add ARC69 data to your NFTs.',
+      'The ARC69 specification allows you to add attributes/traits to your NFTs.',
     links: [
       {
-        title: 'How to add ARC69 JSON to your existing ASAs',
+        title: 'All you need to know about ARC69',
         description:
-          'You can use either NFT Explorer or AlgoDesk to update the ARC69 JSON for your NFTs.',
-        link: 'https://github.com/algokittens/arc69/blob/master/pre-existing-NFTs.md',
+          'Check out this handy website to learn everything you need to know about adding and updating ARC6 data on your Algorand NFts.',
+        link: 'https://arc69.com',
       },
     ],
   },

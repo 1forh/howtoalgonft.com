@@ -12,9 +12,11 @@ function Section({ section }) {
       </div>
 
       <div className='p-5 divide-y-2 lg:p-8 lg:shadow-lg lg:rounded-lg bg-neutral-800 divide-neutral-700'>
-        {links.map((link, index) => (
-          <SectionLink link={link} key={index} />
-        ))}
+        {links && links.length ? (
+          links.map((link, index) => <SectionLink link={link} key={index} />)
+        ) : (
+          <p>Need to add some articles here.</p>
+        )}
       </div>
     </div>
   );
