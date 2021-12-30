@@ -22,7 +22,7 @@ export default function Home() {
             <h2 className='mb-8 text-lg font-bold'>I need help...</h2>
           </div>
 
-          <div className='space-y-12'>
+          <div className='space-y-14'>
             {sections.map((section, index) => (
               <Section section={section} key={index} />
             ))}
