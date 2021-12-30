@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Container from '../components/Container';
+import Section from '../components/Section';
+import sections from '../data/sections';
 
 export default function Home() {
   const title = 'How to Algo NFT';
@@ -15,8 +17,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>How to Algo NFT</h1>
-        <h2>Coming Soon</h2>
+        <Container>
+          <h2 className='mb-8 text-lg font-bold'>I need help...</h2>
+
+          <div className='space-y-12'>
+            {sections.map((section, index) => (
+              <Section section={section} key={index} />
+            ))}
+          </div>
+        </Container>
       </main>
     </div>
   );

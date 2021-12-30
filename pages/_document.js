@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Header from '../components/Header';
 
 export default class MyDocument extends Document {
   render() {
@@ -49,18 +50,19 @@ export default class MyDocument extends Document {
           <meta name='msapplication-TileColor' content='#e5ffd7' />
           <meta name='theme-color' content='#ffffff' />
 
-          {/* <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link
             rel='preconnect'
             href='https://fonts.gstatic.com'
             crossOrigin='true'
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'
             rel='stylesheet'
-          /> */}
+          />
         </Head>
-        <body className='font-body'>
+        <body className='bg-black font-body text-neutral-50'>
+          <Header />
           <Main />
           <NextScript />
         </body>
