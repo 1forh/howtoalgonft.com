@@ -1,8 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
+import siteMetadata from '../data/siteMetadata.js';
 
 function Helmet({ title, description }) {
-  const theTitle = title ? `${title} - How to Algo NFT` : 'How to Algo NFT';
+  const theTitle = title
+    ? `${title} - ${siteMetadata.siteName}`
+    : siteMetadata.siteName;
 
   return (
     <Head>
