@@ -5,7 +5,7 @@ function TableOfContents() {
   return (
     <div className='pb-8 space-y-3 border-b border-neutral-700'>
       <h2 className='text-lg font-bold'>I need help...</h2>
-      <ul className='ml-4 list-disc list-inside'>
+      <ul className='ml-4 space-y-1 list-disc list-inside'>
         {sections
           .filter((section) => section.showInTableOfContents)
           .map((section, index) => (

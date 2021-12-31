@@ -21,6 +21,21 @@ module.exports = {
               fontSize: '24px',
               fontWeight: 'bold',
             },
+            h2: {
+              color: '#FFFFFE',
+              fontSize: '20px',
+              fontWeight: 'bold',
+            },
+            h3: {
+              color: '#FFFFFE',
+              fontSize: '18px',
+              fontWeight: 'bold',
+            },
+            h4: {
+              color: '#FFFFFE',
+              fontSize: '16px',
+              fontWeight: 'bold',
+            },
             img: {
               borderRadius: '8px',
             },

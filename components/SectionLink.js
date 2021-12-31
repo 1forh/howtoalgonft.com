@@ -24,8 +24,24 @@ function SectionLink({ link }) {
       <LinkWrapper href={link.link} internal={link.internal}>
         <div>
           <h4 className='text-lg font-bold'>{link.title}</h4>
-          <p className='overflow-hidden text-sm font-medium text-green-300 hover:underline'>
-            {formattedLink}
+          <p className='inline-flex items-start w-full space-x-1 overflow-hidden text-sm font-medium text-green-300 lg:items-center hover:underline'>
+            {!link.internal && (
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='flex-shrink-0 w-4 h-4'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                />
+              </svg>
+            )}
+            <span>{formattedLink}</span>
           </p>
         </div>
         <p className='opacity-60'>{link.description}</p>
