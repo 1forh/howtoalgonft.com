@@ -107,12 +107,12 @@ const sections = [
         link: '/how-to-buy-nfts-on-ab2-gallery',
         internal: true,
       },
-      {
-        title: 'Buying an NFT on Rand Gallery',
-        description: 'All you need to know to buy an NFT on Rand Gallery.',
-        link: '/how-to-buy-nfts-on-rand-gallery',
-        internal: true,
-      },
+      // {
+      //   title: 'Buying an NFT on Rand Gallery',
+      //   description: 'All you need to know to buy an NFT on Rand Gallery.',
+      //   link: '/how-to-buy-nfts-on-rand-gallery',
+      //   internal: true,
+      // },
     ],
   },
   {
@@ -127,18 +127,18 @@ const sections = [
         link: '/how-to-mint-nfts-on-ab2-gallery',
         internal: true,
       },
-      {
-        title: 'Minting an NFT on Rand Gallery',
-        description: 'All you need to know to mint an NFT on Rand Gallery.',
-        link: '/how-to-mint-nfts-on-rand-gallery',
-        internal: true,
-      },
+      // {
+      //   title: 'Minting an NFT on Rand Gallery',
+      //   description: 'All you need to know to mint an NFT on Rand Gallery.',
+      //   link: '/how-to-mint-nfts-on-rand-gallery',
+      //   internal: true,
+      // },
     ],
   },
   {
     title: 'Selling an NFT',
     description:
-      "Now for the section you've been waiting for. Selling an NFT is a great way to earn Algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.",
+      'Selling an NFT is a great way to earn algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.',
     showInTableOfContents: true,
     links: [
       {
@@ -147,12 +147,12 @@ const sections = [
         link: '/how-to-sell-nfts-on-ab2-gallery',
         internal: true,
       },
-      {
-        title: 'Selling an NFT on Rand Gallery',
-        description: 'All you need to know to sell an NFT on Rand Gallery.',
-        link: '/how-to-sell-nfts-on-rand-gallery',
-        internal: true,
-      },
+      // {
+      //   title: 'Selling an NFT on Rand Gallery',
+      //   description: 'All you need to know to sell an NFT on Rand Gallery.',
+      //   link: '/how-to-sell-nfts-on-rand-gallery',
+      //   internal: true,
+      // },
     ],
   },
   {
