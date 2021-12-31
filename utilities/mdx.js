@@ -77,8 +77,6 @@ export async function getFileBySlug(type, slug) {
 
   let toc = [];
 
-  console.log(source);
-
   const { frontmatter, code } = await bundleMDX({
     source,
     // mdx imports can be automatically source from the components directory

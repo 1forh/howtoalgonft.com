@@ -2,7 +2,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './data/**/*.{js,ts,jsx,tsx}',
+    './data/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -14,6 +14,7 @@ module.exports = {
           css: {
             color: '#FFFFFE',
             a: {
+              fontWeight: 'medium',
               color: '#87EFAC',
             },
             h1: {
@@ -38,6 +39,9 @@ module.exports = {
             },
             img: {
               borderRadius: '8px',
+            },
+            code: {
+              color: '#FFFFFE',
             },
           },
         },
