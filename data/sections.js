@@ -27,7 +27,7 @@ const sections = [
         title: 'Setup My Algo Wallet',
         description:
           '"Here’s a handy guide to setting up your My Algo Wallet."',
-        link: 'https://yieldly.finance/resources/myalgowallet-setup/',
+        link: 'https://yieldly.finance/resources/myalgowallet-setup',
         logos: [
           {
             src: 'my-algo.svg',
