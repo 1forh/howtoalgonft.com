@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.howtoalgonfts.com
+Host: https://www.howtoalgonft.com
 
 # Sitemaps
-Sitemap: https://www.howtoalgonfts.com/sitemap.xml
+Sitemap: https://www.howtoalgonft.com/sitemap.xml
