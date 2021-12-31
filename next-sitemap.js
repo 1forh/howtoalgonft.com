@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://www.howtoalgonfts.com',
+  siteUrl: process.env.SITE_URL || 'https://www.howtoalgonft.com',
   generateRobotsTxt: true, // (optional)
   // ...other options
 };
