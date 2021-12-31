@@ -24,7 +24,7 @@ const sections = [
         ],
       },
       {
-        title: 'Setup My Algo Wallet',
+        title: 'Setup MyAlgo Wallet',
         description:
           'MyAlgo is a browser based Algorand wallet. You can create a new wallet or import a passphrase from your Algorand Wallet. You will need to setup MyAlgo if you want to interact with websites like AB2 Gallery and Rand Gallery.',
         link: 'https://yieldly.finance/resources/myalgowallet-setup',
