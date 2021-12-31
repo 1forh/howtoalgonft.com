@@ -38,7 +38,7 @@ const sections = [
       },
       {
         title:
-          'Already have an Algorand Wallet? Import the Passphrase into MyAlgo.',
+          'Already have an Algorand Wallet? You can import the wallet into MyAlgo.',
         description:
           "You don't have to choose between the two. If you create a wallet via the Algorand Wallet app, you can import the wallet into MyAlgo, vice versa.",
         link: '/articles/import-wallet-into-myalgo',
