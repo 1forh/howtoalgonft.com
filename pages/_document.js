@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
             async
             src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3709556784139074'
             crossOrigin='anonymous'
-          />
+          ></script>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
