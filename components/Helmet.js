@@ -2,15 +2,17 @@ import React from 'react';
 import Head from 'next/head';
 
 function Helmet({ title, description }) {
+  const theTitle = title ? `${title} - How to Algo NFT` : 'How to Algo NFT';
+
   return (
     <Head>
-      <title>{title ? `${title} - How to Algo NFT` : 'How to Algo NFT'}</title>
+      <title>{theTitle}</title>
       <meta name='description' content={description} />
 
-      <meta property='og:title' content={title} />
+      <meta property='og:title' content={theTitle} />
       <meta property='og:description' content={description} />
 
-      <meta name='twitter:title' content={title} />
+      <meta name='twitter:title' content={theTitle} />
       <meta name='twitter:description' content={description} />
       <meta
         name='twitter:image'
