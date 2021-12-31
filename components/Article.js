@@ -6,7 +6,9 @@ const ArticleAd = dynamic(() => import('../components/ArticleAd'), {
   ssr: false,
 });
 
-function Article({ children, title }) {
+function Article({ frontMatter, children }) {
+  const { title } = frontMatter;
+
   return (
     <Container>
       <div className='px-5 prose lg:px-0'>

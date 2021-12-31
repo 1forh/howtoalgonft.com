@@ -9,9 +9,18 @@
   },
   "postbuild": "npm run sitemap",
   "dependencies": {
+    "gray-matter": "^4.0.3",
+    "image-size": "^1.0.0",
+    "mdx-bundler": "^8.0.1",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.0.1",
+    "remark-footnotes": "^4.0.1",
+    "remark-gfm": "^3.0.1",
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",

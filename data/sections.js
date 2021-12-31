@@ -104,7 +104,7 @@ const sections = [
       {
         title: 'Buying an NFT on AB2 Gallery',
         description: 'All you need to know to buy an NFT on AB2 Gallery.',
-        link: '/how-to-buy-nfts-on-ab2-gallery',
+        link: '/articles/how-to-buy-nfts-on-ab2-gallery',
         internal: true,
       },
       // {
@@ -124,7 +124,7 @@ const sections = [
       {
         title: 'Minting an NFT on AB2 Gallery',
         description: 'All you need to know to mint an NFT on AB2 Gallery.',
-        link: '/how-to-mint-nfts-on-ab2-gallery',
+        link: '/articles/how-to-mint-nfts-on-ab2-gallery',
         internal: true,
       },
       // {
@@ -144,7 +144,7 @@ const sections = [
       {
         title: 'Selling an NFT on AB2 Gallery',
         description: 'All you need to know to sell an NFT on AB2 Gallery.',
-        link: '/how-to-sell-nfts-on-ab2-gallery',
+        link: '/articles/how-to-sell-nfts-on-ab2-gallery',
         internal: true,
       },
       // {
