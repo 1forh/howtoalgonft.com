@@ -164,13 +164,13 @@ const sections = [
       {
         title: 'All you need to know about ARC69',
         description:
-          'Check out this handy website to learn everything you need to know about adding and updating ARC6 data on your Algorand NFts.',
+          'Check out this handy website to learn everything you need to know about adding and updating ARC6 data on your Algorand NFTs.',
         link: 'https://arc69.com',
       },
     ],
   },
   {
-    title: 'Websites to buy, sell, and mint Algorand NFts',
+    title: 'Websites to buy, sell, and mint Algorand NFTs',
     description: '',
     showInTableOfContents: false,
     links: [
