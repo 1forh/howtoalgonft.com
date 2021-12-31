@@ -2,7 +2,7 @@ const sections = [
   {
     title: 'Creating a wallet',
     description:
-      'Before anything else, you need to create a wallet. This is where you will store your algos and NFTs.',
+      'Before anything else, you need to create a wallet. There are two ways to create a wallet, the official Algorand Wallet app for iOS and Android or MyAlgo. You will need to create a MyAlgo wallet at some point in order to interact with sites to buy, sell, and mint NFTs.',
     showInTableOfContents: true,
     links: [
       {
@@ -26,7 +26,7 @@ const sections = [
       {
         title: 'Setup My Algo Wallet',
         description:
-          '"Here’s a handy guide to setting up your My Algo Wallet."',
+          'MyAlgo is a browser based Algorand wallet. You can create a new wallet or import a passphrase from your Algorand Wallet. You will need to setup MyAlgo if you want to interact with websites like AB2 Gallery and Rand Gallery.',
         link: 'https://yieldly.finance/resources/myalgowallet-setup',
         logos: [
           {
@@ -37,10 +37,12 @@ const sections = [
         ],
       },
       {
-        title: 'Algorand Wallet or MyAlgo Wallet?',
+        title:
+          'Already have an Algorand Wallet? Import the Passphrase into MyAlgo.',
         description:
           "You don't have to choose between the two. If you create a wallet via the Algorand Wallet app, you can import the wallet into MyAlgo, vice versa.",
-        link: 'https://www.reddit.com/r/AlgorandOfficial/comments/onr1lh/algorand_wallet_or_myalgo_wallet',
+        link: '/articles/import-wallet-into-myalgo',
+        internal: true,
       },
     ],
   },

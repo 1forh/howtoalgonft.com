@@ -17,9 +17,13 @@ module.exports = {
               fontWeight: 500,
               color: '#87EFAC',
             },
+            strong: {
+              color: '#FFFFFE',
+            },
             h1: {
               color: '#FFFFFE',
               fontSize: '22px',
+              lineHeight: '1.4',
               fontWeight: 700,
             },
             h2: {
