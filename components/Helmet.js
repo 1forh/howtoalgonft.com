@@ -14,6 +14,10 @@ function Helmet({ title, description }) {
 
       <meta property='og:title' content={theTitle} />
       <meta property='og:description' content={description} />
+      <meta
+        property='og:image'
+        content={'https://www.howtoalgonft.com/share-image.png'}
+      />
 
       <meta name='twitter:title' content={theTitle} />
       <meta name='twitter:description' content={description} />
