@@ -107,12 +107,12 @@ const sections = [
         link: '/articles/how-to-buy-nfts-on-ab2-gallery',
         internal: true,
       },
-      // {
-      //   title: 'Buying an NFT on Rand Gallery',
-      //   description: 'All you need to know to buy an NFT on Rand Gallery.',
-      //   link: '/how-to-buy-nfts-on-rand-gallery',
-      //   internal: true,
-      // },
+      {
+        title: 'Buying an NFT on Rand Gallery',
+        description: 'All you need to know to buy an NFT on Rand Gallery.',
+        link: '/articles/how-to-buy-nfts-on-rand-gallery',
+        internal: true,
+      },
     ],
   },
   {

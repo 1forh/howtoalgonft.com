@@ -14,28 +14,28 @@ module.exports = {
           css: {
             color: '#FFFFFE',
             a: {
-              fontWeight: 'medium',
+              fontWeight: 500,
               color: '#87EFAC',
             },
             h1: {
               color: '#FFFFFE',
-              fontSize: '24px',
-              fontWeight: 'bold',
+              fontSize: '22px',
+              fontWeight: 700,
             },
             h2: {
-              color: '#FFFFFE',
+              color: '#a3a3a3',
               fontSize: '20px',
-              fontWeight: 'bold',
+              fontWeight: 700,
             },
             h3: {
-              color: '#FFFFFE',
+              color: '#a3a3a3',
               fontSize: '18px',
-              fontWeight: 'bold',
+              fontWeight: 700,
             },
             h4: {
-              color: '#FFFFFE',
+              color: '#a3a3a3',
               fontSize: '16px',
-              fontWeight: 'bold',
+              fontWeight: 700,
             },
             img: {
               borderRadius: '8px',
