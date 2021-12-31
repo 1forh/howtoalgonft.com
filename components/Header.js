@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className='px-5 mt-5 mb-8 lg:px-0'>
       <Container>
-        <div className='flex items-center justify-between pb-8 border-b border-neutral-700'>
+        <div className='flex items-center justify-between pb-5 border-b border-neutral-700'>
           <div>
             <Link href='/'>
               <a>
