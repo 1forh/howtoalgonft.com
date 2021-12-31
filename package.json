@@ -3,11 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
-  "postbuild": "next-sitemap",
+  "postbuild": "npm run sitemap",
   "dependencies": {
     "next": "12.0.7",
     "react": "17.0.2",
