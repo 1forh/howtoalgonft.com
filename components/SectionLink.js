@@ -28,7 +28,7 @@ function SectionLink({ link }) {
             {!link.internal && (
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='flex-shrink-0 w-4 h-4'
+                className='flex-shrink-0 w-4 h-4 mt-1 lg:mt-0'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
