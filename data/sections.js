@@ -213,6 +213,34 @@ const sections = [
       },
     ],
   },
+  {
+    title: 'Other useful links',
+    description: '',
+    showInTableOfContents: false,
+    links: [
+      {
+        title: '#algofam on Twitter',
+        description:
+          'If you want to really get into the community of Algorand NFT artists and hodlers, Twitter is where you need to be. #algofam is a great place to start! The #algofam is one of the best NFT communities on the internet. It is full of friendly and welcoming people who have a passion for Algorand, art, and NFTs.',
+        link: 'https://twitter.com/search?q=%23algofam',
+        logos: [],
+      },
+      {
+        title: '/r/AlgoNFTMarketplace',
+        description:
+          '"This space is meant to discuss and learn about NFTs on Algorand."',
+        link: 'https://www.reddit.com/r/AlgoNFTMarketplace',
+        logos: [],
+      },
+      {
+        title: 'Algonaut’s guide to the universe',
+        description:
+          'A quick and thorough rundown of the Algorand NFT universe.',
+        link: 'https://www.reddit.com/r/Algonauts/comments/n9kg1d/algonauts_guide_to_the_universe',
+        logos: [],
+      },
+    ],
+  },
 ];
 
 export default sections;
