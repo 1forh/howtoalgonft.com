@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Container from '../components/Container';
 import TwitterLink from './TwitterLink';
+import DonationLink from './DonationLink';
 
 function Header() {
   return (
@@ -16,7 +17,8 @@ function Header() {
               </a>
             </Link>
           </div>
-          <div>
+          <div className='flex items-center space-x-5'>
+            <DonationLink small />
             <TwitterLink />
           </div>
         </div>
