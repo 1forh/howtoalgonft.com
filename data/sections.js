@@ -211,6 +211,11 @@ const sections = [
           'AlgoxNFT is an auction house running on Algorand smart contracts',
         link: 'https://algoxnft.com',
       },
+      {
+        title: 'Dartroom',
+        description: '"Sustainable digital art marketplace."',
+        link: 'https://dartroom.xyz',
+      },
     ],
   },
   {
