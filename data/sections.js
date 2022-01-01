@@ -121,7 +121,7 @@ const sections = [
   {
     title: 'Minting an NFT',
     description:
-      'Learn how to create your own NFTs on the Algorand blockchain.',
+      'You can create your own NFTs on the Algorand blockchain pretty easily. Almost every site that allows you to buy and sell NFTs will also allow you to create your own.',
     showInTableOfContents: true,
     links: [
       {
@@ -141,7 +141,7 @@ const sections = [
   {
     title: 'Selling an NFT',
     description:
-      'Selling an NFT is a great way to earn algos. Below is a list of links of resources that will help you sell an NFT on the Algorand blockchain.',
+      "There are a few ways to sell Algorand NFTs. You can sell them directly on sites like AB2 Gallery, sell them in shuffles on Rand Gallery, or auction off your NFTS on AlgoxNFT. Here's how.",
     showInTableOfContents: true,
     links: [
       {
