@@ -131,18 +131,19 @@ const sections = [
         internal: true,
       },
       {
+        title: 'Minting an NFT on Rand Gallery',
+        description:
+          "Rand Gallery is great for minting NFTs. It has a nice UI and it's very fast.",
+        link: '/articles/how-to-mint-nfts-on-rand-gallery',
+        internal: true,
+      },
+      {
         title:
           'Batch minting NFTs following the ARC69 metadata standard using Python',
         description:
           '"This guide will walk you through batch minting NFTs on Algorand following ARC69 using Python. No prior experience with Python is assumed, but you will be required to make some changes to the Python script to suit your requirements."',
         link: 'https://github.com/algokittens/algoNFTs/tree/master/batch_mint_arc69',
       },
-      // {
-      //   title: 'Minting an NFT on Rand Gallery',
-      //   description: 'All you need to know to mint an NFT on Rand Gallery.',
-      //   link: '/how-to-mint-nfts-on-rand-gallery',
-      //   internal: true,
-      // },
     ],
   },
   {
