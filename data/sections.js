@@ -121,7 +121,7 @@ const sections = [
   {
     title: 'Minting an NFT',
     description:
-      'You can create your own NFTs on the Algorand blockchain pretty easily. Almost every site that allows you to buy and sell NFTs will also allow you to create your own.',
+      'You can create your own NFTs on the Algorand blockchain pretty easily. Almost every site that allows you to buy and sell NFTs will also allow you to create your own. If you have a lot of NFTs to mint and you know the Python programming language, you can batch create your NFTs.',
     showInTableOfContents: true,
     links: [
       {
@@ -129,6 +129,13 @@ const sections = [
         description: 'All you need to know to mint an NFT on AB2 Gallery.',
         link: '/articles/how-to-mint-nfts-on-ab2-gallery',
         internal: true,
+      },
+      {
+        title:
+          'Batch minting NFTs following the ARC69 metadata standard using Python',
+        description:
+          '"This guide will walk you through batch minting NFTs on Algorand following ARC69 using Python. No prior experience with Python is assumed, but you will be required to make some changes to the Python script to suit your requirements."',
+        link: 'https://github.com/algokittens/algoNFTs/tree/master/batch_mint_arc69',
       },
       // {
       //   title: 'Minting an NFT on Rand Gallery',
