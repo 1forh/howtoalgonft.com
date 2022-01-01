@@ -121,7 +121,7 @@ const sections = [
   {
     title: 'Minting an NFT',
     description:
-      'You can create your own NFTs on the Algorand blockchain pretty easily. Almost every site that allows you to buy and sell NFTs will also allow you to create your own. If you have a lot of NFTs to mint and you know the Python programming language, you can batch create your NFTs.',
+      'There are a few options to create your own NFTs on the Algorand blockchain. Most sites that allow you to buy and sell NFTs will also allow you to create your own. If you have a lot of NFTs to mint and you know the Python programming language, you can batch create your NFTs.',
     showInTableOfContents: true,
     links: [
       {
