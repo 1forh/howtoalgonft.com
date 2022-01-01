@@ -133,7 +133,7 @@ const sections = [
       {
         title: 'Minting an NFT on Rand Gallery',
         description:
-          "Rand Gallery is great for minting NFTs. It has a nice UI and it's very fast.",
+          "Rand Gallery is a great place to mint your NFTs. The website has a very nice UI and it's very fast.",
         link: '/articles/how-to-mint-nfts-on-rand-gallery',
         internal: true,
       },
