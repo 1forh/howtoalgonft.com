@@ -6,7 +6,7 @@ import sections from '../data/sections';
 export default function Donate() {
   const title = 'Donate';
   const description =
-    'Donate some algos if you want. Any little bit helps out so much!';
+    'Want to help out? You can donate algos to the address below. Thanks so much!';
 
   return (
     <div>
