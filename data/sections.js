@@ -144,6 +144,12 @@ const sections = [
           '"This guide will walk you through batch minting NFTs on Algorand following ARC69 using Python. No prior experience with Python is assumed, but you will be required to make some changes to the Python script to suit your requirements."',
         link: 'https://github.com/algokittens/algoNFTs/tree/master/batch_mint_arc69',
       },
+      {
+        title: 'Batch mint NFTs using Node.js',
+        description:
+          'Mint Algorand NFTs using Node.js following the ARC69 specification',
+        link: 'https://github.com/algofishexe/minter',
+      },
     ],
   },
   {
@@ -158,16 +164,10 @@ const sections = [
         link: '/articles/how-to-sell-nfts-on-ab2-gallery',
         internal: true,
       },
-      // {
-      //   title: 'Selling an NFT on Rand Gallery',
-      //   description: 'All you need to know to sell an NFT on Rand Gallery.',
-      //   link: '/how-to-sell-nfts-on-rand-gallery',
-      //   internal: true,
-      // },
     ],
   },
   {
-    title: 'Adding ARC69 data to my Algorand NFTs',
+    title: 'Adding ARC69 metadata to my Algorand NFTs',
     description:
       'The ARC69 specification allows you to add attributes/traits to your NFTs.',
     showInTableOfContents: false,
