@@ -231,6 +231,12 @@ const sections = [
         logos: [],
       },
       {
+        title: 'Awesome Algorand',
+        description:
+          'An awesome list about everything related to the Algorand Blockchain',
+        link: 'https://awesomealgo.com/',
+      },
+      {
         title: '/r/AlgoNFTMarketplace',
         description:
           '"This space is meant to discuss and learn about NFTs on Algorand."',
