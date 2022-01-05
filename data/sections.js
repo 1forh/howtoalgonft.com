@@ -104,6 +104,13 @@ const sections = [
     showInTableOfContents: true,
     links: [
       {
+        title: 'Finding NFTs to Buy',
+        description:
+          "Have some algos and want to buy/invest in some NFTs? Here's where to go to find new and established NFT collections on the Algorand blockchain.",
+        link: '/articles/finding-nfts-to-buy',
+        internal: true,
+      },
+      {
         title: 'Buying an NFT on AB2 Gallery',
         description: 'All you need to know to buy an NFT on AB2 Gallery.',
         link: '/articles/how-to-buy-nfts-on-ab2-gallery',
@@ -119,7 +126,7 @@ const sections = [
     ],
   },
   {
-    title: 'Minting an NFT',
+    title: 'Minting/Creating an NFT',
     description:
       'There are a few options to create your own NFTs on the Algorand blockchain. Most sites that allow you to buy and sell NFTs will also allow you to create your own. If you have a lot of NFTs to mint and you know the Python programming language, you can batch create your NFTs.',
     showInTableOfContents: true,
