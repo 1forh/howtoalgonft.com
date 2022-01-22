@@ -174,6 +174,20 @@ const sections = [
     ],
   },
   {
+    title: 'Burning an NFT',
+    description:
+      'Burning and NFT means to destroy it. Currently, there is only one way to do this that I know of.',
+    showInTableOfContents: true,
+    links: [
+      {
+        title: 'Burning an NFT on Algodesk',
+        description: 'Algodesk is a website you can use to burn Algorand NFTs.',
+        link: '/articles/how-to-burn-nfts-on-algodesk',
+        internal: true,
+      },
+    ],
+  },
+  {
     title: 'Adding ARC69 metadata to my Algorand NFTs',
     description:
       'The ARC69 specification allows you to add attributes/traits to your NFTs.',
