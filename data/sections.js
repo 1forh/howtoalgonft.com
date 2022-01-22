@@ -181,7 +181,8 @@ const sections = [
     links: [
       {
         title: 'Burning an NFT on Algodesk',
-        description: 'Algodesk is a website you can use to burn Algorand NFTs.',
+        description:
+          'Algodesk is a website you can use to create, manage, and burn Algorand NFTs.',
         link: '/articles/how-to-burn-nfts-on-algodesk',
         internal: true,
       },
