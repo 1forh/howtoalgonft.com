@@ -176,7 +176,7 @@ const sections = [
   {
     title: 'Burning an NFT',
     description:
-      'Burning and NFT means to destroy it. Currently, there is only one way to do this that I know of.',
+      'Burning an NFT means to destroy it. Currently, there is only one way to do this that I know of.',
     showInTableOfContents: true,
     links: [
       {
