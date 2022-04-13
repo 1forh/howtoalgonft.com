@@ -51,10 +51,10 @@ const sections = [
     showInTableOfContents: true,
     links: [
       {
-        title: 'Transferring Algos from an Exchange to Algorand Wallet on Coinbase',
+        title: 'Withdrawing algos from an exchange to your Pera Algo Wallet account',
         description:
-          '"On the Algorand Blockchain, Algos are the native currency that are needed to send transactions, add assets, and interact with applications. By the end of this tutorial, you’ll have successfully transferred Algos from an exchange to your Algorand Wallet."',
-        link: 'https://algorandwallet.com/support/getting-started/transfer-algos-from-exchange-to-algowallet',
+          '"On the Algorand Blockchain, algos are the native currency that are needed to send transactions, add assets, and interact with applications. By the end of this tutorial, you\'ll have successfully transferred algos from an exchange to your Pera Algo Wallet."',
+        link: 'https://support.perawallet.app/en/article/transacting-with-an-exchange-16zmdkn',
         logos: [
           {
             src: 'coinbase.svg',
