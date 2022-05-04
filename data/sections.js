@@ -201,15 +201,20 @@ const sections = [
     showInTableOfContents: false,
     links: [
       {
-        title: 'AB2 Gallery',
-        description: '"AB2 Gallery is a decentralized marketplace for crypto art assets secured on the Algorand blockchain."',
-        link: 'https://ab2.gallery',
-        logos: [],
-      },
-      {
         title: 'Rand Gallery',
         description: '"Enjoy sustainable Algorand NFTs! 🪴🖼️🌱"',
         link: 'https://www.randgallery.com',
+        logos: [],
+      },
+      {
+        title: 'AlgoxNFT',
+        description: 'AlgoxNFT is an auction house running on Algorand smart contracts',
+        link: 'https://algoxnft.com',
+      },
+      {
+        title: 'AB2 Gallery',
+        description: '"AB2 Gallery is a decentralized marketplace for crypto art assets secured on the Algorand blockchain."',
+        link: 'https://ab2.gallery',
         logos: [],
       },
       {
@@ -219,11 +224,7 @@ const sections = [
         link: 'https://algogems.io',
         logos: [],
       },
-      {
-        title: 'AlgoxNFT',
-        description: 'AlgoxNFT is an auction house running on Algorand smart contracts',
-        link: 'https://algoxnft.com',
-      },
+
       {
         title: 'Dartroom',
         description: '"Sustainable digital art marketplace."',
