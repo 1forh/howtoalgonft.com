@@ -51,6 +51,19 @@ const sections = [
     showInTableOfContents: true,
     links: [
       {
+        title: 'Buy Algorand right from your Pera Algo Wallet using Moonpay',
+        description: '"MoonPay offers a fast and easy way to buy Algorand with credit card."',
+        link: 'https://www.moonpay.com/buy/algo',
+        logos: [
+          {
+            src: 'moonpay.svg',
+            alt: 'MoonPay',
+            link: 'https://www.moonpay.com/buy/algo',
+            heightClass: 'h-8',
+          },
+        ],
+      },
+      {
         title: 'Withdrawing algos from an exchange to your Pera Algo Wallet account',
         description:
           '"On the Algorand Blockchain, algos are the native currency that are needed to send transactions, add assets, and interact with applications. By the end of this tutorial, you\'ll have successfully transferred algos from an exchange to your Pera Algo Wallet."',
@@ -94,6 +107,37 @@ const sections = [
     ],
   },
   {
+    title: 'Minting/Creating an NFT',
+    description:
+      'There are a few options to create your own NFTs on the Algorand blockchain. Most sites that allow you to buy and sell NFTs will also allow you to create your own. If you have a lot of NFTs to mint and you know the Python programming language, you can batch create your NFTs.',
+    showInTableOfContents: true,
+    links: [
+      {
+        title: 'Minting an NFT on Rand Gallery',
+        description: "Rand Gallery is a great place to mint your NFTs. The website has a nice UI and it's very fast.",
+        link: '/articles/how-to-mint-nfts-on-rand-gallery',
+        internal: true,
+      },
+      {
+        title: 'Minting an NFT on AB2 Gallery',
+        description: 'All you need to know to mint an NFT on AB2 Gallery.',
+        link: '/articles/how-to-mint-nfts-on-ab2-gallery',
+        internal: true,
+      },
+      {
+        title: 'Batch minting NFTs following the ARC69 metadata standard using Python',
+        description:
+          '"This guide will walk you through batch minting NFTs on Algorand following ARC69 using Python. No prior experience with Python is assumed, but you will be required to make some changes to the Python script to suit your requirements."',
+        link: 'https://github.com/algokittens/algoNFTs/tree/master/batch_mint_arc69',
+      },
+      {
+        title: 'Batch mint NFTs using Node.js',
+        description: 'Mint Algorand NFTs using Node.js following the ARC69 specification',
+        link: 'https://github.com/algofishexe/minter',
+      },
+    ],
+  },
+  {
     title: 'Buying an NFT',
     description: "Support artists and NFT collections and invest your algos by buying NFTs on the Algorand blockchain. Here's how.",
     showInTableOfContents: true,
@@ -112,6 +156,12 @@ const sections = [
         internal: true,
       },
       {
+        title: 'Buying an NFT on ALGOxNFT',
+        description: 'Here is how to buy an NFT on ALGOxNFT.',
+        link: '/articles/how-to-buy-nfts-on-algoxnft',
+        internal: true,
+      },
+      {
         title: 'Buying an NFT on AB2 Gallery',
         description: 'All you need to know to buy an NFT on AB2 Gallery.',
         link: '/articles/how-to-buy-nfts-on-ab2-gallery',
@@ -119,37 +169,7 @@ const sections = [
       },
     ],
   },
-  {
-    title: 'Minting/Creating an NFT',
-    description:
-      'There are a few options to create your own NFTs on the Algorand blockchain. Most sites that allow you to buy and sell NFTs will also allow you to create your own. If you have a lot of NFTs to mint and you know the Python programming language, you can batch create your NFTs.',
-    showInTableOfContents: true,
-    links: [
-      {
-        title: 'Minting an NFT on AB2 Gallery',
-        description: 'All you need to know to mint an NFT on AB2 Gallery.',
-        link: '/articles/how-to-mint-nfts-on-ab2-gallery',
-        internal: true,
-      },
-      {
-        title: 'Minting an NFT on Rand Gallery',
-        description: "Rand Gallery is a great place to mint your NFTs. The website has a nice UI and it's very fast.",
-        link: '/articles/how-to-mint-nfts-on-rand-gallery',
-        internal: true,
-      },
-      {
-        title: 'Batch minting NFTs following the ARC69 metadata standard using Python',
-        description:
-          '"This guide will walk you through batch minting NFTs on Algorand following ARC69 using Python. No prior experience with Python is assumed, but you will be required to make some changes to the Python script to suit your requirements."',
-        link: 'https://github.com/algokittens/algoNFTs/tree/master/batch_mint_arc69',
-      },
-      {
-        title: 'Batch mint NFTs using Node.js',
-        description: 'Mint Algorand NFTs using Node.js following the ARC69 specification',
-        link: 'https://github.com/algofishexe/minter',
-      },
-    ],
-  },
+
   {
     title: 'Selling an NFT',
     description:
@@ -207,8 +227,8 @@ const sections = [
         logos: [],
       },
       {
-        title: 'AlgoxNFT',
-        description: 'AlgoxNFT is an auction house running on Algorand smart contracts',
+        title: 'ALGOxNFT',
+        description: 'ALGOxNFT offers auctions, instant shuffles, buy and sell, and more.',
         link: 'https://algoxnft.com',
       },
       {
