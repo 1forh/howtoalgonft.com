@@ -216,10 +216,17 @@ const sections = [
     ],
   },
   {
-    title: 'Websites to buy, sell, and mint Algorand NFTs',
+    title: 'Websites to explore, buy, sell, and mint Algorand NFTs',
     description: '',
     showInTableOfContents: false,
     links: [
+      {
+        title: 'NFT Explorer',
+        description:
+          'NFT Explorer is tracking the sales and prices of NFTs across the Algorand blockchain, while also providing the best place for artists to display their collection"',
+        link: 'https://nftexplorer.app',
+        logos: [],
+      },
       {
         title: 'Rand Gallery',
         description: '"Enjoy sustainable Algorand NFTs! 🪴🖼️🌱"',
