@@ -125,6 +125,12 @@ const sections = [
         internal: true,
       },
       {
+        title: 'Batch minting NFTS using AlgoNFTS.art',
+        description:
+          'AlgoNFTS.art makes it super easy to generate thousands of unique NFTs that include ARC69 metadata. Check out their Help/About page to learn more.',
+        link: 'https://algonfts.art/',
+      },
+      {
         title: 'Batch minting NFTs following the ARC69 metadata standard using Python',
         description:
           '"This guide will walk you through batch minting NFTs on Algorand following ARC69 using Python. No prior experience with Python is assumed, but you will be required to make some changes to the Python script to suit your requirements."',
@@ -251,11 +257,15 @@ const sections = [
         link: 'https://algogems.io',
         logos: [],
       },
-
       {
         title: 'Dartroom',
         description: '"Sustainable digital art marketplace."',
         link: 'https://dartroom.xyz',
+      },
+      {
+        title: 'AlgoNFTS.art - Algorand NFT Generator',
+        description: 'Automatically generate NFTs on the Algorand blockchain from layer images. Uses RNG and creates ARC69 trait metadata.',
+        link: 'https://algonfts.art',
       },
     ],
   },
