@@ -168,6 +168,16 @@ const sections = [
         internal: true,
       },
       {
+        title: 'Buying NFTs on Shufl',
+        description: 'You can buy NFTs on Shufl using your Pera Algo Wallet or My Algo wallet.',
+        link: 'https://shufl.app',
+      },
+      {
+        title: 'Buy from Instant Shuffles on Instant Shuffle',
+        description: 'Instant Shuffle is a fun way to purchase NFTs. It allows you to mint/purchase a random NFT from a collection.',
+        link: 'https://instantshuffle.com',
+      },
+      {
         title: 'Buying an NFT on AB2 Gallery',
         description: 'All you need to know to buy an NFT on AB2 Gallery.',
         link: '/articles/how-to-buy-nfts-on-ab2-gallery',
