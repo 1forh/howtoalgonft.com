@@ -188,8 +188,8 @@ const sections = [
         link: 'https://algoxnft.com',
       },
       {
-        title: 'Selling NFTs on AlgoxNFT',
-        description: 'You can make listings for approved collections on AlgoxNFT too. You can make auctions, shuffles, or Buy Now listings.',
+        title: 'Selling NFTs on ALGOxNFT',
+        description: 'You can make listings for approved collections on ALGOxNFT too. You can make auctions, shuffles, or Buy Now listings.',
         link: 'https://algoxnft.com',
       },
       {
