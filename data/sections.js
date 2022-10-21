@@ -185,7 +185,7 @@ const sections = [
       {
         title: 'Selling NFTs on Rand Gallery',
         description: 'You can make listings for approved collections on Rand Gallery. This site lets you sell NFTs for a fixed price.',
-        link: 'https://algoxnft.com',
+        link: 'https://www.randgallery.com/algo-collection',
       },
       {
         title: 'Selling NFTs on ALGOxNFT',
