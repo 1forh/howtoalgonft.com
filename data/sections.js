@@ -183,6 +183,16 @@ const sections = [
     showInTableOfContents: true,
     links: [
       {
+        title: 'Selling NFTs on Rand Gallery',
+        description: 'You can make listings for approved collections on Rand Gallery. This site lets you sell NFTs for a fixed price.',
+        link: 'https://algoxnft.com',
+      },
+      {
+        title: 'Selling NFTs on AlgoxNFT',
+        description: 'You can make listings for approved collections on AlgoxNFT too. You can make auctions, shuffles, or Buy Now listings.',
+        link: 'https://algoxnft.com',
+      },
+      {
         title: 'Selling an NFT on AB2 Gallery',
         description: 'All you need to know to sell an NFT on AB2 Gallery.',
         link: '/articles/how-to-sell-nfts-on-ab2-gallery',
