@@ -179,7 +179,7 @@ const sections = [
   {
     title: 'Selling an NFT',
     description:
-      "There are a few ways to sell Algorand NFTs. You can sell them directly on sites like AB2 Gallery, sell them in shuffles on Rand Gallery, or auction off your NFTS on AlgoxNFT. Here's how.",
+      "There are a few ways to sell Algorand NFTs. You can sell them directly on sites like Rand Gallery and ALGOxNFT, sell them in shuffles on Instant Shuffle, or auction off your NFTS on ALGOxNFT. Here's how.",
     showInTableOfContents: true,
     links: [
       {
@@ -191,6 +191,16 @@ const sections = [
         title: 'Selling NFTs on ALGOxNFT',
         description: 'You can make listings for approved collections on ALGOxNFT too. You can make auctions, shuffles, or Buy Now listings.',
         link: 'https://algoxnft.com',
+      },
+      {
+        title: 'Selling NFTs on Shufl',
+        description: 'You can sell approved listings here too.',
+        link: 'https://shufl.app',
+      },
+      {
+        title: 'Shuffles on Instant Shuffle by Rand Gallery',
+        description: 'Instant Shuffle allows you to create shuffles. This a completely randomized way of selling your NFT collection.',
+        link: 'https://instantshuffle.com',
       },
       {
         title: 'Selling an NFT on AB2 Gallery',
@@ -253,6 +263,12 @@ const sections = [
         title: 'ALGOxNFT',
         description: 'ALGOxNFT offers auctions, instant shuffles, buy and sell, and more.',
         link: 'https://algoxnft.com',
+      },
+      {
+        title: 'Shufl',
+        description:
+          'Shufl is a community focused NFT marketplace dedicated to empowering creators and communities while using our platform to drive real world impacts.',
+        link: 'https://shufl.app',
       },
       {
         title: 'AB2 Gallery',
