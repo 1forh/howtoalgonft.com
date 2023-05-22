@@ -5,8 +5,7 @@ import sections from '../data/sections';
 import TableOfContents from '../components/TableOfContents';
 
 export default function Home() {
-  const description =
-    'Guides on how to create, buy, and sell NFTs on the Algorand blockchain';
+  const description = 'Guides on how to create, buy, and sell NFTs on the Algorand blockchain';
 
   return (
     <div>

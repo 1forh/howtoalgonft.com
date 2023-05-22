@@ -2,14 +2,14 @@ const sections = [
   {
     title: 'Creating a wallet',
     description:
-      'Before anything else, you need to create a wallet. There are two ways to create a wallet, the Pera Algo Wallet app for iOS and Android or MyAlgo. You will need to create a MyAlgo wallet at some point in order to interact with sites to buy, sell, and mint NFTs.',
+      'Before anything else, you need to create a wallet. There are a few ways to create a wallet. The Pera Algo Wallet for Web/iOS/Android and the Defly Wallet for iOS/Android are the best options.',
     showInTableOfContents: true,
     links: [
       {
         title: 'Create a New Account on the Pera Algo Wallet app',
         description:
-          'Learn how to create a new account on the Pera Algo Wallet, the official Algorand wallet app. You can get the app for iOS and Android.',
-        link: 'https://perawallet.app/support',
+          'Learn how to create a new account on the Pera Algo Wallet, the official Algorand wallet app. You can get the app for iOS and Android. There is also a web version that you can use.',
+        link: 'https://perawallet.app',
         logos: [
           {
             src: 'app-store.svg',
@@ -24,24 +24,17 @@ const sections = [
         ],
       },
       {
-        title: 'Setup MyAlgo Wallet',
+        title: 'Setup Defly Wallet',
         description:
-          'MyAlgo is a browser based Algorand wallet. You can create a new wallet or import a passphrase from your Algorand Wallet. You will need to setup MyAlgo if you want to interact with websites like AB2 Gallery and Rand Gallery.',
-        link: 'https://yieldly.finance/resources/myalgowallet-setup',
+          'Defly Wallet is a highly innovative Algorand wallet. By design, on a deeply technical level, you have ultimate control of your funds. Defly Wallet is non-custodial for both holding and trading assets. You do not have to rely on trust or legal recourse to assure control and ownership of your funds.',
+        link: 'https://defly.app',
         logos: [
           {
-            src: 'my-algo.svg',
-            alt: 'My Algo Wallet',
-            link: 'https://wallet.myalgo.com/home',
+            src: 'defly.svg',
+            alt: 'Defly Wallet',
+            link: 'https://defly.app',
           },
         ],
-      },
-      {
-        title: 'Already have an Algorand Wallet? You can import the wallet into MyAlgo.',
-        description:
-          "You don't have to choose between the two. If you create a wallet via the Algorand Wallet app, you can import the wallet into MyAlgo, vice versa.",
-        link: '/articles/import-wallet-into-myalgo',
-        internal: true,
       },
     ],
   },
@@ -119,12 +112,6 @@ const sections = [
         internal: true,
       },
       {
-        title: 'Minting an NFT on AB2 Gallery',
-        description: 'All you need to know to mint an NFT on AB2 Gallery.',
-        link: '/articles/how-to-mint-nfts-on-ab2-gallery',
-        internal: true,
-      },
-      {
         title: 'Batch minting NFTS using AlgoNFTS.art',
         description:
           'AlgoNFTS.art makes it super easy to generate thousands of unique NFTs that include ARC69 metadata. Check out their Help/About page to learn more.',
@@ -177,12 +164,6 @@ const sections = [
         description: 'Instant Shuffle is a fun way to purchase NFTs. It allows you to mint/purchase a random NFT from a collection.',
         link: 'https://instantshuffle.com',
       },
-      {
-        title: 'Buying an NFT on AB2 Gallery',
-        description: 'All you need to know to buy an NFT on AB2 Gallery.',
-        link: '/articles/how-to-buy-nfts-on-ab2-gallery',
-        internal: true,
-      },
     ],
   },
 
@@ -211,12 +192,6 @@ const sections = [
         title: 'Shuffles on Instant Shuffle by Rand Gallery',
         description: 'Instant Shuffle allows you to create shuffles. This a completely randomized way of selling your NFT collection.',
         link: 'https://instantshuffle.com',
-      },
-      {
-        title: 'Selling an NFT on AB2 Gallery',
-        description: 'All you need to know to sell an NFT on AB2 Gallery.',
-        link: '/articles/how-to-sell-nfts-on-ab2-gallery',
-        internal: true,
       },
       {
         title: 'Open Source Smart Contract for Selling NFTs by Rand Gallery',
