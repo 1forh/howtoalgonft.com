@@ -1,42 +1,46 @@
-import React from 'react'
-import { Metadata } from 'next'
+import { SITE_NAME } from '@/constants';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import clsx from 'clsx';
+import fonts from './_lib/fonts';
+import Head from 'next/head';
+import Script from 'next/script';
 
-import { AdminBar } from './_components/AdminBar'
-import { Footer } from './_components/Footer'
-import { Header } from './_components/Header'
-import { Providers } from './_providers'
-import { InitTheme } from './_providers/Theme/InitTheme'
-import { mergeOpenGraph } from './_utilities/mergeOpenGraph'
-
-import './_css/app.scss'
-
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <InitTheme />
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
-      <body>
-        <Providers>
-          <AdminBar />
-          {/* @ts-expect-error */}
-          <Header />
-          {children}
-          {/* @ts-expect-error */}
-          <Footer />
-        </Providers>
-      </body>
-    </html>
-  )
-}
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://payloadcms.com'),
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@payloadcms',
+  title: SITE_NAME,
+  description: '',
+  openGraph: {
+    images: [
+      {
+        url: '/facebook-image.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
-  openGraph: mergeOpenGraph(),
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang='en' className={clsx(...fonts)}>
+      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+        <>
+          <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}></Script>
+          <Script id='gtag'>
+            {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                
+                gtag('config', 'G-JJBPC85LS4');
+            `}
+          </Script>
+        </>
+      )}
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
 }

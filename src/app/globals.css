@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+    @apply bg-gray-950 text-gray-50 font-body;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent flicker of horizontal scrollbar when clicking "Manage" on user table */
+  }
+}

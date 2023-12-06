@@ -1,5 +1,14 @@
-import PageTemplate, { generateMetadata } from './(pages)/[slug]/page'
+import Footer from './_components/Footer';
 
-export default PageTemplate
+export const revalidate = 300;
 
-export { generateMetadata }
+export default async function Home() {
+  // const payload = await getPayloadClient();
+
+  return (
+    <main>
+      How to Algo NFT
+      <Footer />
+    </main>
+  );
+}

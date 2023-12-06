@@ -1,29 +1,53 @@
-import { slateEditor } from '@payloadcms/richtext-slate'
-import path from 'path'
-import type { CollectionConfig } from 'payload/types'
+import { CollectionConfig } from 'payload/types';
 
-export const Media: CollectionConfig = {
+const MediaCollection: CollectionConfig = {
   slug: 'media',
-  upload: {
-    staticDir: path.resolve(__dirname, '../../../media'),
+  labels: {
+    singular: 'Media',
+    plural: 'Media',
   },
-  access: {
-    read: () => true,
+  admin: {
+    group: 'Media',
+  },
+  upload: {
+    staticURL: '/media',
+    staticDir: 'media',
+    mimeTypes: ['image/*'],
+    disableLocalStorage: true,
+    // imageSizes: [
+    //   {
+    //     name: 'small',
+    //     width: 320,
+    //   },
+    //   {
+    //     name: 'medium',
+    //     width: 640,
+    //   },
+    //   {
+    //     name: 'large',
+    //     width: 1024,
+    //   },
+    // ],
+    // adminThumbnail: 'small',
   },
   fields: [
+    // Additional fields can be added here if needed
     {
       name: 'alt',
       type: 'text',
+      label: 'Alt Text',
       required: true,
     },
     {
       name: 'caption',
-      type: 'richText',
-      editor: slateEditor({
-        admin: {
-          elements: ['link'],
-        },
-      }),
+      type: 'textarea',
+      label: 'Caption',
     },
   ],
-}
+  access: {
+    read: (): boolean => true, // Everyone can read Media
+  },
+  timestamps: true,
+};
+
+export default MediaCollection;
