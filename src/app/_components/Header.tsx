@@ -6,7 +6,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <PageContainer>
+    <PageContainer className="mb-10">
       <div className='flex justify-between py-5'>
         <div>
           <p className="font-bold text-xl">How to ALGO NFT</p>

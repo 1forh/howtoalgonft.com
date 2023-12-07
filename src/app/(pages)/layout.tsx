@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../_components/Header';
+import Footer from '../_components/Footer';
 
 type Props = {
   children: React.ReactNode;
@@ -7,10 +8,11 @@ type Props = {
 
 const layout = ({ children }: Props) => {
   return (
-    <div className='h-full min-h-[100dvh] bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-50'>
+    <main className='h-full min-h-[100dvh] bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-50'>
       <Header />
       {children}
-    </div>
+      <Footer />
+    </main>
   );
 };
 

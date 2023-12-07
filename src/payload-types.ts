@@ -34,10 +34,16 @@ export interface Post {
   id: string;
   title: string;
   coverImage: string | Media;
+  slug?: string | null;
   excerpt: string;
   body: {
     [k: string]: unknown;
   }[];
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    image?: string | Media | null;
+  };
   updatedAt: string;
   createdAt: string;
 }

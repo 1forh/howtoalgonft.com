@@ -1,5 +1,17 @@
 import clsx from 'clsx';
+import serialize from '../_lib/seralize';
 
-export function Prose({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
-  return <div className={clsx(className, 'prose dark:prose-invert')} {...props} />;
+type Props = {
+  className?: string;
+  content: any;
+};
+
+export function Prose({ className, content, ...props }: Props) {
+  if (!content) return <></>;
+
+  return (
+    <div className={clsx(className, 'prose dark:prose-invert')} {...props}>
+      {serialize(content)}
+    </div>
+  );
 }

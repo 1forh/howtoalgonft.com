@@ -1,12 +1,13 @@
 'use client';
 
-import { useContext } from 'react';
 import { useRouter } from 'next/navigation';
+import { useContext } from 'react';
 
-import { AppContext } from './Providers';
+import { Post } from '@/payload-types';
+import { formatDate } from '../_lib/helpers';
 import PageContainer from './PageContainer';
 import { Prose } from './Prose';
-import dayjs from 'dayjs';
+import { AppContext } from './Providers';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -16,13 +17,7 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-export function ArticleLayout({
-  article,
-  children,
-}: {
-  article: any; // todo type
-  children: React.ReactNode;
-}) {
+export function ArticleLayout({ post }: { post: Post }) {
   let router = useRouter();
   let { previousPathname } = useContext(AppContext);
 
@@ -42,15 +37,13 @@ export function ArticleLayout({
           )}
           <article>
             <header className='flex flex-col'>
-              <h1 className='mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>{article.title}</h1>
-              <time dateTime={article.date} className='order-first flex items-center text-base text-zinc-400 dark:text-zinc-500'>
+              <h1 className='mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>{post.title}</h1>
+              <time dateTime={post.createdAt} className='order-first flex items-center text-base text-zinc-400 dark:text-zinc-500'>
                 <span className='h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500' />
-                <span className='ml-3'>{dayjs(article.date).format('MMMM D, YYYY')}</span>
+                <span className='ml-3'>{formatDate(post.createdAt)}</span>
               </time>
             </header>
-            <Prose className='mt-8' data-mdx-content>
-              {children}
-            </Prose>
+            <Prose className='mt-8' data-mdx-content content={post.body} />
           </article>
         </div>
       </div>
