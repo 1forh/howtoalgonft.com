@@ -1,13 +1,13 @@
-import { Lato } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 // If loading a variable font, you don't need to specify the font weight
-const lato = Lato({
+const inter = Inter({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-Lato',
+  variable: '--font-inter',
 });
 
-const fonts = [lato.variable];
+const fonts = [inter.variable];
 
 export default fonts;

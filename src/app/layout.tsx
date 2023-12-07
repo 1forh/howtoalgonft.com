@@ -1,13 +1,10 @@
 import { SITE_NAME } from '@/constants';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
 import clsx from 'clsx';
-import fonts from './_lib/fonts';
-import Head from 'next/head';
+import type { Metadata } from 'next';
 import Script from 'next/script';
-
-const inter = Inter({ subsets: ['latin'] });
+import Header from './_components/Header';
+import fonts from './_lib/fonts';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: SITE_NAME,
@@ -40,7 +37,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Script>
         </>
       )}
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

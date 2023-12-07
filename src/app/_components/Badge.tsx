@@ -3,7 +3,7 @@ import React from 'react';
 
 const themes = {
   blue: 'bg-blue-500 text-white',
-  green: 'bg-green-500',
+  green: 'bg-primary-500',
   red: 'bg-red-500',
   yellow: 'bg-yellow-500',
   black: 'bg-gray-950 text-white',

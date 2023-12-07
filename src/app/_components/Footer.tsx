@@ -16,7 +16,7 @@ function Footer() {
               href={'https://twitter.com/MinnerAlgo'}
               target={'_blank'}
               rel='noreferrer'
-              className='font-bold underline transition duration-200 text-primary-500 hover:text-primary-800'
+              className='font-bold underline transition duration-200 text-primary-500 hover:text-primary-700'
             >
               minner.algo
             </a>{' '}
