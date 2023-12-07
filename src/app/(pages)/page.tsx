@@ -1,4 +1,4 @@
-import Footer from './_components/Footer';
+import Footer from '../_components/Footer';
 
 export const revalidate = 300;
 

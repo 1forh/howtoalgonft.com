@@ -11,6 +11,10 @@ const ThemeToggle = (props: Props) => {
   let otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark';
   let [mounted, setMounted] = useState(false);
 
+  const onSetTheme = () => {
+    setTheme(otherTheme);
+  };
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -20,7 +24,7 @@ const ThemeToggle = (props: Props) => {
       type='button'
       aria-label={mounted ? `Switch to ${otherTheme} theme` : 'Toggle theme'}
       className='group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur transition dark:bg-gray-800/90 dark:ring-white/10 dark:hover:ring-white/20'
-      onClick={() => setTheme(otherTheme)}
+      onClick={onSetTheme}
     >
       <Icon
         name='sun'

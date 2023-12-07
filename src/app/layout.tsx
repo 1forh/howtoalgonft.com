@@ -5,6 +5,7 @@ import Script from 'next/script';
 import Header from './_components/Header';
 import fonts from './_lib/fonts';
 import './globals.css';
+import { Providers } from './_components/Providers';
 
 export const metadata: Metadata = {
   title: SITE_NAME,
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={clsx(...fonts)}>
+    <html lang='en' className={clsx(...fonts, 'antialiased, font-body scroll-smooth overflow-x-hidden')} suppressHydrationWarning>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
         <>
           <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}></Script>
@@ -37,9 +38,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Script>
         </>
       )}
-      <body>
-        <Header />
-        {children}
+      <body className="flex flex-col h-full">
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

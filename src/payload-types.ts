@@ -9,8 +9,7 @@
 export interface Config {
   collections: {
     media: Media;
-    blockchains: Blockchain;
-    sites: Site;
+    posts: Post;
     users: User;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -21,6 +20,7 @@ export interface Media {
   id: string;
   alt: string;
   caption?: string | null;
+  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -30,19 +30,14 @@ export interface Media {
   width?: number | null;
   height?: number | null;
 }
-export interface Blockchain {
+export interface Post {
   id: string;
-  name?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-export interface Site {
-  id: string;
-  name: string;
-  collectionName: string;
-  blockchain: string | Blockchain;
-  url: string;
-  image: string | Media;
+  title: string;
+  coverImage: string | Media;
+  excerpt: string;
+  body: {
+    [k: string]: unknown;
+  }[];
   updatedAt: string;
   createdAt: string;
 }

@@ -5,9 +5,11 @@ import path from 'path';
 import { buildConfig } from 'payload/config';
 import MediaCollection from './collections/media';
 import CloudStoragePlugin from './plugins/storage';
+import PostsCollection from './collections/posts';
+import SeoPlugin from './plugins/seo';
 
 export default buildConfig({
-  plugins: [CloudStoragePlugin],
+  plugins: [CloudStoragePlugin, SeoPlugin],
   db: mongooseAdapter({
     url: process.env.MONGODB_URI as string,
   }),
@@ -15,7 +17,7 @@ export default buildConfig({
   admin: {
     bundler: webpackBundler(),
   },
-  collections: [MediaCollection],
+  collections: [MediaCollection, PostsCollection],
   globals: [
     // Your globals here
   ],
