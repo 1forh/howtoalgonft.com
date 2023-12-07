@@ -1,4 +1,5 @@
 import { CollectionConfig } from 'payload/types';
+import { slugField } from '../fields/slug';
 
 const PostsCollection: CollectionConfig = {
   slug: 'posts',
@@ -15,7 +16,11 @@ const PostsCollection: CollectionConfig = {
       type: 'upload',
       relationTo: 'media',
       required: true,
+      admin: {
+        position: 'sidebar',
+      },
     },
+    slugField(),
     {
       name: 'excerpt',
       label: 'Excerpt',

@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Script>
         </>
       )}
-      <body className="flex flex-col h-full">
+      <body className="flex flex-col h-full min-h-[100dvh]">
         <Providers>
           {children}
         </Providers>
