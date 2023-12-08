@@ -10,6 +10,7 @@ export interface Config {
   collections: {
     media: Media;
     posts: Post;
+    pages: Page;
     users: User;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -39,6 +40,27 @@ export interface Post {
   body: {
     [k: string]: unknown;
   }[];
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    image?: string | Media | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+export interface Page {
+  id: string;
+  title: string;
+  slug?: string | null;
+  sections?:
+    | {
+        hero: {
+          title: string;
+          description: string;
+        };
+        id?: string | null;
+      }[]
+    | null;
   meta?: {
     title?: string | null;
     description?: string | null;

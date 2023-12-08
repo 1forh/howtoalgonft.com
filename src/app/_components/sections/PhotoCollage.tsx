@@ -5,7 +5,7 @@ import React, { useMemo } from 'react';
 
 type Props = {};
 
-const Photos = (props: Props) => {
+const PhotoCollage = (props: Props) => {
   const images = useMemo(
     () =>
       [
@@ -89,4 +89,4 @@ const Photos = (props: Props) => {
   );
 };
 
-export default Photos;
+export default PhotoCollage;

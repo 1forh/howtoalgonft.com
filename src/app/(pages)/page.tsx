@@ -1,44 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
 import getPayloadClient from '@/payload/payloadClient';
-import Footer from '../_components/Footer';
-import ArticlePreview from '../_components/ArticlePreview';
-import PageContainer from '../_components/PageContainer';
-import Photos from './Photos';
-import Hero from './Hero';
-import Gradients from './Gradients';
-import Features from './Features';
+import { notFound } from 'next/navigation';
 import Cta from '../_components/Cta';
+import Gradients from '../_components/Gradients';
 import LogoCloud from '../_components/LogoCloud';
+import SectionLoader from '../_components/SectionLoader';
+import Features from '../_components/sections/Features';
 
 export const revalidate = 300;
 
 export default async function Home() {
   const payload = await getPayloadClient();
 
-  const resp = await payload.find({
-    collection: 'posts',
+  // get home page
+  const homePageResp = await payload.find({
+    collection: 'pages',
+    where: {
+      slug: {
+        equals: 'home',
+      }
+    }
   });
-  const posts = resp.docs;
+
+  const homePage = homePageResp.docs[0];
+  if (!homePage) notFound();
 
   return (
     <div className="relative h-full">
       <Gradients />
-      <Hero />
-      <Photos />
+      <SectionLoader sections={homePage.sections} />
+      {/* <Photos /> */}
       <Features />
       <Cta />
       <LogoCloud />
-
-      {/* <PageContainer>
-        <div className='mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2'>
-          <div className='flex flex-col gap-16'>
-            {posts.map((post) => (
-              <ArticlePreview key={post.id} post={post} />
-            ))}
-          </div>
-          <div className='lg:pl-16 xl:pl-24'>sidebar stuff here</div>
-        </div> */}
-      {/* </PageContainer> */}
     </div>
   );
 }

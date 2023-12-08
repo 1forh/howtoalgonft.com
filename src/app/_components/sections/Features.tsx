@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card } from '../_components/Card';
-import { IconName } from '../_components/Icon';
-import PageContainer from '../_components/PageContainer';
+import { Card } from '../Card';
+import { IconName } from '../Icon';
+import PageContainer from '../PageContainer';
 
 const features: { name: string; description: string; href: string; icon: IconName }[] = [
   {
