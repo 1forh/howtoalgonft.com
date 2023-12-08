@@ -1,4 +1,5 @@
 import escapeHTML from 'escape-html';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { Fragment } from 'react';
 import { Text } from 'slate';
@@ -56,7 +57,6 @@ const serialize = (children?: Children): React.ReactNode[] =>
     if (!node) {
       return null;
     }
-
     switch (node.type) {
       case 'h1':
         return <h1 key={i}>{serialize(node?.children)}</h1>;
@@ -84,6 +84,9 @@ const serialize = (children?: Children): React.ReactNode[] =>
             {serialize(node?.children)}
           </Link>
         );
+      case 'upload':
+        // @ts-ignore
+        return <Image src={node.value!.url} alt={node.value!.url} key={i} width={node.value!.width / 2} height={node.value!.height / 2} />;
 
       default:
         return <p key={i}>{serialize(node?.children)}</p>;
