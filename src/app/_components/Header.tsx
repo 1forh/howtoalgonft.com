@@ -1,21 +1,26 @@
 import React from 'react';
 import ThemeToggle from './ThemeToggle';
 import PageContainer from './PageContainer';
+import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = {};
 
 const Header = (props: Props) => {
   return (
     <PageContainer className="mb-10">
-      <div className='flex justify-between py-5'>
+      <div className='flex justify-between items-center py-5'>
         <div>
-          <p className="font-bold text-xl">How to ALGO NFT</p>
+          <Link href="/">
+            <Image src="/logo.png" alt="How to ALGO NFT" width={519} height={72} className='w-[200px]' />
+            <span className='sr-only'>How to ALGO NFT</span>
+          </Link>
         </div>
         <div>
           <ThemeToggle />
         </div>
-      </div>
-    </PageContainer>
+      </div >
+    </PageContainer >
   );
 };
 
