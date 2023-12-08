@@ -5,6 +5,7 @@ const CategoriesCollection: CollectionConfig = {
   slug: 'categories',
   fields: [TitleField],
   admin: {
+    useAsTitle: 'title',
     group: 'Taxonomy',
   },
 };
