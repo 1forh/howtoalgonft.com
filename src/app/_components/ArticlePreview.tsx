@@ -10,9 +10,9 @@ type Props = {
 const ArticlePreview = ({ post }: Props) => {
   return (
     <Card as='article'>
-      <Card.Title href={`/articles/${post.slug}`}>{post.title}</Card.Title>
+      <Card.Title href={`/posts/${post.slug}`}>{post.title}</Card.Title>
       <Card.Description>{post.excerpt}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>Learn more</Card.Cta>
     </Card>
   );
 };

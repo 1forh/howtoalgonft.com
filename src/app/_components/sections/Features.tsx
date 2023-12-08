@@ -39,7 +39,7 @@ export default function Features({ content }: Props) {
                 <Card.Icon name={feature.icon} />
                 <Card.Title href={`/${feature.link}`}>{feature.title}</Card.Title>
                 <Card.Description>{feature.description}</Card.Description>
-                <Card.Cta>Read more</Card.Cta>
+                <Card.Cta>Learn more</Card.Cta>
               </Card>
             ))}
           </dl>
