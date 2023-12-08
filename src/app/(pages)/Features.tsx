@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Card } from '../_components/Card';
 import { IconName } from '../_components/Icon';
 import PageContainer from '../_components/PageContainer';
@@ -50,11 +51,10 @@ export default function Features() {
     <div className='mb-16 md:mb-32'>
       <PageContainer>
         <div className='mx-auto max-w-2xl lg:text-center'>
-          <h2 className='text-base font-semibold leading-7 text-primary-600'>Deploy faster</h2>
-          <p className='mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl'>Everything you need to deploy your app</p>
+          <h2 className='text-base font-semibold leading-7 text-primary-600'>Learn about Algorand</h2>
+          <p className='mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl'>Algorand NFT Essentials</p>
           <p className='mt-6 text-lg leading-8 text-gray-400'>
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In
-            mi viverra elit nunc.
+            Discover the simplicity of minting, buying, and managing NFTs on the most advanced and eco-friendly blockchain available in the world.
           </p>
         </div>
 

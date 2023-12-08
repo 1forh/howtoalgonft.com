@@ -80,7 +80,7 @@ Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
   return (
     <div
       aria-hidden="true"
-      className="relative z-10 mt-4 flex items-center font-medium text-teal-500"
+      className="relative z-10 mt-4 flex items-center font-medium text-primary-500"
     >
       {children}
       <Icon name="arrowRightLong" className="ml-2 w-4" />
