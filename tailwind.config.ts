@@ -19,6 +19,7 @@ const config: Config = {
       },
       colors: {
         primary: colors.green,
+        accent: colors.sky,
         gray: colors.neutral,
       },
       backgroundImage: {

@@ -5,6 +5,7 @@ import ArticlePreview from '../_components/ArticlePreview';
 import PageContainer from '../_components/PageContainer';
 import Photos from './Photos';
 import Hero from './Hero';
+import Gradients from './Gradients';
 
 export const revalidate = 300;
 
@@ -15,10 +16,11 @@ export default async function Home() {
     collection: 'posts',
   });
   const posts = resp.docs;
-  console.log(posts);
 
   return (
-    <div>
+    <div className="relative h-full">
+      <Gradients />
+
       <PageContainer>
         <Hero />
       </PageContainer>
