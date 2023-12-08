@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import getPayloadClient from '@/payload/payloadClient';
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import BlocksLoader from '../_components/BlocksLoader';
 import Cta from '../_components/Cta';
 import Gradients from '../_components/Gradients';
 import LogoCloud from '../_components/LogoCloud';
-import Features from '../_components/sections/Features';
 import { formatMetadata } from '../_lib/helpers';
 
 export const revalidate = 300;
@@ -50,8 +49,6 @@ export default async function Home() {
     <div className='relative h-full'>
       <Gradients />
       <BlocksLoader blocks={homePage.blocks} />
-      {/* <Photos /> */}
-      <Features />
       <Cta />
       <LogoCloud />
     </div>

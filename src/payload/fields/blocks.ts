@@ -1,4 +1,4 @@
-import { CategoryField, DescriptionField, TitleField } from './base';
+import { CategoryField, DescriptionField, KickerField, TitleField } from './base';
 import { Block, Field } from 'payload/types';
 
 const Hero: Block = {
@@ -40,6 +40,56 @@ const PhotoCollage: Block = {
   ],
 };
 
+const icons = ['wallet', 'phone', 'cart', 'sparkles', 'store', 'objectsColumn'];
+const Features: Block = {
+  slug: 'features',
+  labels: {
+    singular: 'Features',
+    plural: 'Features',
+  },
+  fields: [
+    KickerField,
+    TitleField,
+    DescriptionField,
+    {
+      type: 'array',
+      name: 'features',
+      label: 'Features',
+      fields: [
+        {
+          name: 'icon',
+          label: 'Icon',
+          type: 'select',
+          required: true,
+          defaultValue: 'wallet',
+          options: icons.map((icon) => ({
+            label: icon,
+            value: icon,
+          })),
+        },
+        {
+          type: 'text',
+          name: 'title',
+          label: 'Title',
+          required: true,
+        },
+        {
+          type: 'textarea',
+          name: 'description',
+          label: 'Description',
+          required: true,
+        },
+        {
+          name: 'link',
+          label: 'Link',
+          type: 'text',
+          required: true,
+        },
+      ],
+    },
+  ],
+};
+
 const PostsList: Block = {
   slug: 'postsList',
   labels: {
@@ -49,7 +99,7 @@ const PostsList: Block = {
   fields: [CategoryField],
 };
 
-const blocks: Block[] = [Hero, PhotoCollage, PostsList];
+const blocks: Block[] = [Features, Hero, PhotoCollage, PostsList];
 
 export const BlocksField: Field = {
   name: 'blocks',

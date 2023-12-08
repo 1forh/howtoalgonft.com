@@ -1,5 +1,12 @@
 import { Field } from 'payload/types';
 
+export const KickerField: Field = {
+  name: 'kicker',
+  label: 'Kicker',
+  type: 'text',
+  required: true,
+};
+
 export const TitleField: Field = {
   name: 'title',
   label: 'Title',

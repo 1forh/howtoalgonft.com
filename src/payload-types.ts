@@ -9,6 +9,7 @@
 export interface Config {
   collections: {
     media: Media;
+    categories: Category;
     posts: Post;
     pages: Page;
     users: User;
@@ -31,11 +32,18 @@ export interface Media {
   width?: number | null;
   height?: number | null;
 }
+export interface Category {
+  id: string;
+  title: string;
+  updatedAt: string;
+  createdAt: string;
+}
 export interface Post {
   id: string;
   title: string;
   coverImage: string | Media;
   slug?: string | null;
+  category?: (string | null) | Category;
   excerpt: string;
   body: {
     [k: string]: unknown;
@@ -55,6 +63,23 @@ export interface Page {
   blocks?:
     | (
         | {
+            kicker: string;
+            title: string;
+            description: string;
+            features?:
+              | {
+                  icon: 'wallet' | 'phone' | 'cart' | 'sparkles' | 'store' | 'objectsColumn';
+                  title: string;
+                  description: string;
+                  link: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'features';
+          }
+        | {
             title: string;
             description: string;
             id?: string | null;
@@ -72,6 +97,12 @@ export interface Page {
             id?: string | null;
             blockName?: string | null;
             blockType: 'photoCollage';
+          }
+        | {
+            category?: (string | null) | Category;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'postsList';
           }
       )[]
     | null;
