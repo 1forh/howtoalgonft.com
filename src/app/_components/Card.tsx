@@ -1,19 +1,6 @@
-import Link from 'next/link'
 import clsx from 'clsx'
+import Link from 'next/link'
 import Icon, { IconName } from './Icon'
-
-function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M6.75 5.75 9.25 8l-2.5 2.25"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
 
 export function Card<T extends React.ElementType = 'div'>({
   as,
@@ -96,7 +83,7 @@ Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
       className="relative z-10 mt-4 flex items-center font-medium text-teal-500"
     >
       {children}
-      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+      <Icon name="arrowRightLong" className="ml-2 w-4" />
     </div>
   )
 }

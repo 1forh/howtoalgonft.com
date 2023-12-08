@@ -3,7 +3,7 @@ import PageContainer from "./PageContainer";
 
 function Footer() {
   return (
-    <footer className='pt-36 md:pt-48 site-footer'>
+    <footer className='pt-36 md:pt-48 site-footer pb-12'>
       <PageContainer>
         <div className='space-y-6'>
           <p className='text-lg text-center'>

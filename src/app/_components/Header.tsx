@@ -8,7 +8,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <PageContainer className="mb-10">
+    <PageContainer className="mb-24">
       <div className='flex justify-between items-center py-5'>
         <div>
           <Link href="/">

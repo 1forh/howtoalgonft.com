@@ -7,6 +7,7 @@ import Photos from './Photos';
 import Hero from './Hero';
 import Gradients from './Gradients';
 import Features from './Features';
+import Cta from '../_components/Cta';
 
 export const revalidate = 300;
 
@@ -24,6 +25,7 @@ export default async function Home() {
       <Hero />
       <Photos />
       <Features />
+      <Cta />
 
       {/* <PageContainer>
         <div className='mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2'>
