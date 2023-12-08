@@ -6,6 +6,7 @@ import PageContainer from '../_components/PageContainer';
 import Photos from './Photos';
 import Hero from './Hero';
 import Gradients from './Gradients';
+import Features from './Features';
 
 export const revalidate = 300;
 
@@ -20,14 +21,11 @@ export default async function Home() {
   return (
     <div className="relative h-full">
       <Gradients />
-
-      <PageContainer>
-        <Hero />
-      </PageContainer>
-
+      <Hero />
       <Photos />
+      <Features />
 
-      <PageContainer>
+      {/* <PageContainer>
         <div className='mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2'>
           <div className='flex flex-col gap-16'>
             {posts.map((post) => (
@@ -35,8 +33,8 @@ export default async function Home() {
             ))}
           </div>
           <div className='lg:pl-16 xl:pl-24'>sidebar stuff here</div>
-        </div>
-      </PageContainer>
+        </div> */}
+      {/* </PageContainer> */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import Icon, { IconName } from './Icon'
 
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -45,6 +46,17 @@ Card.Link = function CardLink({
         <span className="relative z-10">{children}</span>
       </Link>
     </>
+  )
+}
+
+Card.Icon = function CardIcon({
+  name,
+  ...props
+}: React.ComponentPropsWithoutRef<'svg'> & { name: IconName }) {
+  return (
+    <div className="mb-8 w-7">
+      <Icon name={name} {...props} />
+    </div>
   )
 }
 

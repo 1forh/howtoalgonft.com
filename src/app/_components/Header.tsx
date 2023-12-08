@@ -16,9 +16,9 @@ const Header = (props: Props) => {
             <span className='sr-only'>How to ALGO NFT</span>
           </Link>
         </div>
-        <div>
+        {/* <div>
           <ThemeToggle />
-        </div>
+        </div> */}
       </div >
     </PageContainer >
   );

@@ -1,58 +1,64 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useMemo } from 'react';
 
 type Props = {};
 
 const Photos = (props: Props) => {
-  const images = [
-    {
-      src: '/media/nfts/shitty-kitty.webp',
-      alt: 'Shitty Kitty',
-      href: 'https://www.nftexplorer.app/collection/shitty-kitties-third',
-    },
-    {
-      src: '/media/nfts/mngo.png',
-      alt: 'M.N.G.O',
-      href: 'https://www.nftexplorer.app/collection/mngo'
-    },
-    {
-      src: '/media/nfts/cgr.jpeg',
-      alt: 'Crazy Goose Robots',
-      href: 'https://www.nftexplorer.app/collection/crazy-goose-robots'
-    },
-    {
-      src: '/media/nfts/flemish-clone.png',
-      alt: 'Flemish Clone',
-      href: 'https://www.nftexplorer.app/collection/flemish-clones'
-    },
-    {
-      src: '/media/nfts/goodboi.webp',
-      alt: 'goodbois',
-      href: 'https://www.nftexplorer.app/collection/goodbois'
-    },
-    {
-      src: '/media/nfts/mia.webp',
-      alt: 'MIA',
-      href: 'https://www.nftexplorer.app/collection/mama-mia'
-    },
-    {
-      src: '/media/nfts/city-block.png',
-      alt: 'Shitty City Block',
-      href: 'https://www.nftexplorer.app/collection/shitty-city-blocks'
-    },
-    {
-      src: '/media/nfts/little-royal.webp',
-      alt: 'Little Royals',
-      href: 'https://www.nftexplorer.app/collection/little-royals'
-    },
-    {
-      src: '/media/nfts/pooof.webp',
-      alt: 'State Pooof',
-      href: 'https://www.nftexplorer.app/collection/state-pooofs'
-    },
-  ].sort(() => Math.random() - 0.5).slice(0, 5);
+  const images = useMemo(
+    () =>
+      [
+        {
+          src: '/media/nfts/shitty-kitty.webp',
+          alt: 'Shitty Kitty',
+          href: 'https://www.nftexplorer.app/collection/shitty-kitties-third',
+        },
+        {
+          src: '/media/nfts/mngo.png',
+          alt: 'M.N.G.O',
+          href: 'https://www.nftexplorer.app/collection/mngo',
+        },
+        {
+          src: '/media/nfts/cgr.jpeg',
+          alt: 'Crazy Goose Robots',
+          href: 'https://www.nftexplorer.app/collection/crazy-goose-robots',
+        },
+        {
+          src: '/media/nfts/flemish-clone.png',
+          alt: 'Flemish Clone',
+          href: 'https://www.nftexplorer.app/collection/flemish-clones',
+        },
+        {
+          src: '/media/nfts/goodboi.webp',
+          alt: 'goodbois',
+          href: 'https://www.nftexplorer.app/collection/goodbois',
+        },
+        {
+          src: '/media/nfts/mia.webp',
+          alt: 'MIA',
+          href: 'https://www.nftexplorer.app/collection/mama-mia',
+        },
+        {
+          src: '/media/nfts/city-block.png',
+          alt: 'Shitty City Block',
+          href: 'https://www.nftexplorer.app/collection/shitty-city-blocks',
+        },
+        {
+          src: '/media/nfts/little-royal.webp',
+          alt: 'Little Royals',
+          href: 'https://www.nftexplorer.app/collection/little-royals',
+        },
+        {
+          src: '/media/nfts/pooof.webp',
+          alt: 'State Pooof',
+          href: 'https://www.nftexplorer.app/collection/state-pooofs',
+        },
+      ]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 5),
+    []
+  );
   const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
