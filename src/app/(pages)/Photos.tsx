@@ -56,7 +56,7 @@ const Photos = (props: Props) => {
   const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
-    <div className='mb-16 sm:mb-20'>
+    <div className='mb-16 sm:mb-32'>
       <div className='-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8'>
         {images.map((image, imageIndex) => (
           <div
