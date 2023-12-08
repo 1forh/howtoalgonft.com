@@ -1,4 +1,4 @@
-import { DescriptionField, TitleField } from './base';
+import { CategoryField, DescriptionField, TitleField } from './base';
 import { Block, Field } from 'payload/types';
 
 const Hero: Block = {
@@ -40,7 +40,16 @@ const PhotoCollage: Block = {
   ],
 };
 
-const blocks: Block[] = [Hero, PhotoCollage];
+const PostsList: Block = {
+  slug: 'postsList',
+  labels: {
+    singular: 'Posts List',
+    plural: 'Posts Lists',
+  },
+  fields: [CategoryField],
+};
+
+const blocks: Block[] = [Hero, PhotoCollage, PostsList];
 
 export const BlocksField: Field = {
   name: 'blocks',

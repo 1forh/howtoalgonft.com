@@ -3,6 +3,7 @@ import { mongooseAdapter } from '@payloadcms/db-mongodb';
 import { slateEditor } from '@payloadcms/richtext-slate';
 import path from 'path';
 import { buildConfig } from 'payload/config';
+import CategoriesCollection from './collections/categories';
 import MediaCollection from './collections/media';
 import PagesCollection from './collections/pages';
 import PostsCollection from './collections/posts';
@@ -18,7 +19,7 @@ export default buildConfig({
   admin: {
     bundler: webpackBundler(),
   },
-  collections: [MediaCollection, PostsCollection, PagesCollection],
+  collections: [MediaCollection, CategoriesCollection, PostsCollection, PagesCollection],
   globals: [
     // Your globals here
   ],

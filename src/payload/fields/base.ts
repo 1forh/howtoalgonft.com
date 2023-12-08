@@ -38,3 +38,10 @@ export const CoverImageField: Field = {
     position: 'sidebar',
   },
 };
+
+export const CategoryField: Field = {
+  name: 'category',
+  label: 'Category',
+  type: 'relationship',
+  relationTo: 'categories',
+};
