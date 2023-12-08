@@ -1,4 +1,5 @@
 import { Field } from 'payload/types';
+import CategoryPreview from '../components/CategoryPreview';
 
 export const KickerField: Field = {
   name: 'kicker',
