@@ -4,9 +4,10 @@ import { slateEditor } from '@payloadcms/richtext-slate';
 import path from 'path';
 import { buildConfig } from 'payload/config';
 import MediaCollection from './collections/media';
-import CloudStoragePlugin from './plugins/storage';
+import PagesCollection from './collections/pages';
 import PostsCollection from './collections/posts';
 import SeoPlugin from './plugins/seo';
+import CloudStoragePlugin from './plugins/storage';
 
 export default buildConfig({
   plugins: [CloudStoragePlugin, SeoPlugin],
@@ -17,7 +18,7 @@ export default buildConfig({
   admin: {
     bundler: webpackBundler(),
   },
-  collections: [MediaCollection, PostsCollection],
+  collections: [MediaCollection, PostsCollection, PagesCollection],
   globals: [
     // Your globals here
   ],
