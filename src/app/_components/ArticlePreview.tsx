@@ -1,7 +1,5 @@
-import React from 'react';
-import { Card } from './Card';
 import { Post } from '@/payload-types';
-import { formatDate } from '../_lib/helpers';
+import { Card } from './Card';
 
 type Props = {
   post: Post;

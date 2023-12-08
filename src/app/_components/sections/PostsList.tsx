@@ -1,9 +1,7 @@
 import { Category } from '@/payload-types';
-import React from 'react';
-import PageContainer from '../PageContainer';
 import getPayloadClient from '@/payload/payloadClient';
-import { Card } from '../Card';
 import ArticlePreview from '../ArticlePreview';
+import PageContainer from '../PageContainer';
 
 type Props = {
   content: {

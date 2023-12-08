@@ -2,6 +2,7 @@ import { ArticleLayout } from '@/app/_components/ArticleLayout';
 import PageContainer from '@/app/_components/PageContainer';
 import getPayloadClient from '@/payload/payloadClient';
 import { notFound } from 'next/navigation';
+
 export const revalidate = 300;
 
 export default async function Post({ params }: { params: { slug: string[] } }) {
@@ -22,8 +23,6 @@ export default async function Post({ params }: { params: { slug: string[] } }) {
   if (!post) notFound();
 
   return (
-    <PageContainer>
-      <ArticleLayout post={post} />
-    </PageContainer>
+    <ArticleLayout post={post} />
   );
 }
