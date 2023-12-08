@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import getPayloadClient from '@/payload/payloadClient';
 import { notFound } from 'next/navigation';
+import BlocksLoader from '../_components/BlocksLoader';
 import Cta from '../_components/Cta';
 import Gradients from '../_components/Gradients';
 import LogoCloud from '../_components/LogoCloud';
-import SectionLoader from '../_components/SectionLoader';
 import Features from '../_components/sections/Features';
 
 export const revalidate = 300;
@@ -28,7 +28,7 @@ export default async function Home() {
   return (
     <div className="relative h-full">
       <Gradients />
-      <SectionLoader sections={homePage.sections} />
+      <BlocksLoader blocks={homePage.blocks} />
       {/* <Photos /> */}
       <Features />
       <Cta />

@@ -52,14 +52,28 @@ export interface Page {
   id: string;
   title: string;
   slug?: string | null;
-  sections?:
-    | {
-        hero: {
-          title: string;
-          description: string;
-        };
-        id?: string | null;
-      }[]
+  blocks?:
+    | (
+        | {
+            title: string;
+            description: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'hero';
+          }
+        | {
+            photos?:
+              | {
+                  image: string | Media;
+                  url: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'photoCollage';
+          }
+      )[]
     | null;
   meta?: {
     title?: string | null;
