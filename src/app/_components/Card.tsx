@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import Icon, { IconName } from './Icon'
+import Image from 'next/image'
 
 export function Card<T extends React.ElementType = 'div'>({
   as,
@@ -43,6 +44,30 @@ Card.Icon = function CardIcon({
   return (
     <div className="mb-8 w-7">
       <Icon name={name} {...props} />
+    </div>
+  )
+}
+
+Card.Image = function CardImage({
+  src,
+  alt,
+  width,
+  height,
+}: {
+  src: string
+  alt: string
+  width: number
+  height: number
+}) {
+  return (
+    <div className="relative z-10 w-[200px] h-[200px] flex-shrink-0 overflow-hidden rounded-2xl">
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="object-cover w-full h-full absolute inset-0"
+      />
     </div>
   )
 }

@@ -28,7 +28,7 @@ const PostsList = async ({ content }: Props) => {
 
   return (
     <PageContainer>
-      <div className='flex flex-col gap-16 max-w-2xl'>
+      <div className='flex flex-col gap-16 max-w-3xl'>
         {posts.map((post) => (
           <ArticlePreview key={post.id} post={post} />
         ))}

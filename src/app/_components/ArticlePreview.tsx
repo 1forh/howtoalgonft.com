@@ -8,9 +8,16 @@ type Props = {
 const ArticlePreview = ({ post }: Props) => {
   return (
     <Card as='article'>
-      <Card.Title href={`/posts/${post.slug}`}>{post.title}</Card.Title>
-      <Card.Description>{post.excerpt}</Card.Description>
-      <Card.Cta>Learn more</Card.Cta>
+      <div className="flex gap-16">
+        {typeof post.coverImage === 'object' && (
+          <Card.Image src={post.coverImage.url!} alt={post.coverImage.alt} width={post.coverImage.width!} height={post.coverImage.height!} />
+        )}
+        <div className='flex flex-col justify-center'>
+          <Card.Title href={`/posts/${post.slug}`}>{post.title}</Card.Title>
+          <Card.Description>{post.excerpt}</Card.Description>
+          <Card.Cta>Learn more</Card.Cta>
+        </div>
+      </div>
     </Card>
   );
 };
