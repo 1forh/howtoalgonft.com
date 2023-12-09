@@ -40,6 +40,7 @@ export const getPost = async (slug: string) => {
       slug: {
         equals: slug,
       },
+      ...isPublished,
     },
   });
 
@@ -62,6 +63,7 @@ export const getPostsByCategoryId = async (categoryId: string) => {
       category: {
         equals: categoryId,
       },
+      ...isPublished,
     },
   });
   const posts = resp.docs;
