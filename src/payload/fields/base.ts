@@ -53,3 +53,23 @@ export const CategoryField: Field = {
   type: 'relationship',
   relationTo: 'categories',
 };
+
+export const StatusField: Field = {
+  name: 'status',
+  label: 'Status',
+  type: 'select',
+  defaultValue: 'draft',
+  options: [
+    {
+      label: 'Draft',
+      value: 'draft',
+    },
+    {
+      label: 'Published',
+      value: 'published',
+    },
+  ],
+  admin: {
+    position: 'sidebar',
+  },
+};

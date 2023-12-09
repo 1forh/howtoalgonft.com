@@ -1,5 +1,5 @@
+import { getPostsByCategoryId } from '@/app/_lib/payload';
 import { Category } from '@/payload-types';
-import getPayloadClient from '@/payload/payloadClient';
 import ArticlePreview from '../ArticlePreview';
 import PageContainer from '../PageContainer';
 
@@ -13,18 +13,8 @@ type Props = {
 };
 
 const PostsList = async ({ content }: Props) => {
-  const payload = await getPayloadClient();
   const categoryId = (content.category as Category).id;
-
-  const resp = await payload.find({
-    collection: 'posts',
-    where: {
-      category: {
-        equals: categoryId,
-      },
-    },
-  });
-  const posts = resp.docs;
+  const posts = await getPostsByCategoryId(categoryId);
 
   return (
     <PageContainer>

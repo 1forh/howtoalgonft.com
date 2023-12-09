@@ -1,28 +1,19 @@
 import { ArticleLayout } from '@/app/_components/ArticleLayout';
-import PageContainer from '@/app/_components/PageContainer';
-import getPayloadClient from '@/payload/payloadClient';
+import { getPost } from '@/app/_lib/payload';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 export const revalidate = 300;
 
+export async function generateMetadata({ params }: { params: { slug: string[] } }): Promise<Metadata> {
+  const slug = params.slug.join('/');
+  const page = await getPost(slug);
+  return page.meta;
+}
+
 export default async function Post({ params }: { params: { slug: string[] } }) {
   const slug = params.slug.join('/');
-
-  const payload = await getPayloadClient();
-
-  const resp = await payload.find({
-    collection: 'posts',
-    where: {
-      slug: {
-        equals: slug,
-      },
-    },
-  });
-  const post = resp.docs[0];
-
+  const post = await getPost(slug);
   if (!post) notFound();
-
-  return (
-    <ArticleLayout post={post} />
-  );
+  return <ArticleLayout post={post} />;
 }

@@ -1,13 +1,13 @@
 import { CollectionConfig } from 'payload/types';
-import { BodyField, CategoryField, CoverImageField, ExcerptField, TitleField } from '../fields/base';
+import { BodyField, CategoryField, CoverImageField, ExcerptField, StatusField, TitleField } from '../fields/base';
 import { slugField } from '../fields/slug';
 
 const PostsCollection: CollectionConfig = {
   slug: 'posts',
   admin: {
-    defaultColumns: ['title', 'category'],
+    defaultColumns: ['title', 'slug', 'category', 'status'],
   },
-  fields: [TitleField, CoverImageField, slugField(), CategoryField, ExcerptField, BodyField],
+  fields: [TitleField, StatusField, slugField(), CoverImageField, CategoryField, ExcerptField, BodyField],
 };
 
 export default PostsCollection;
