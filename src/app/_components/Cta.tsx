@@ -39,7 +39,7 @@ export default function Cta() {
               Check out NFT Explorer
               <Icon name="externalLink" className='w-3' />
             </Link>
-            <Link href='/' className='text-sm font-semibold leading-6 text-white flex items-center gap-2'>
+            <Link href='/posts/finding-nfts-to-buy' className='text-sm font-semibold leading-6 text-white flex items-center gap-2'>
               Learn more <Icon name="arrowRightLong" className='w-4' />
             </Link>
           </div>
