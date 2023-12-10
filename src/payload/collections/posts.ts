@@ -4,6 +4,7 @@ import { slugField } from '../fields/slug';
 
 const PostsCollection: CollectionConfig = {
   slug: 'posts',
+  defaultSort: '-updateAt',
   admin: {
     defaultColumns: ['title', 'slug', 'category', 'status'],
   },
