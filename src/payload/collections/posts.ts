@@ -7,7 +7,7 @@ const PostsCollection: CollectionConfig = {
   slug: 'posts',
   defaultSort: '-updateAt',
   admin: {
-    defaultColumns: ['title', 'slug', 'category', 'status'],
+    defaultColumns: ['title', 'slug', 'category', 'status', 'createdBy'],
   },
   access: {
     read: isAdminOrCreatedBy,

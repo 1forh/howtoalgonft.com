@@ -14,6 +14,15 @@ const Users: CollectionConfig = {
   },
   fields: [
     {
+      name: 'name',
+      type: 'text',
+    },
+    {
+      name: 'twitter',
+      label: 'X Username',
+      type: 'text',
+    },
+    {
       name: 'role',
       type: 'select',
       options: [
@@ -26,6 +35,9 @@ const Users: CollectionConfig = {
         read: () => true,
         update: isAdmin,
         create: isAdmin,
+      },
+      admin: {
+        position: 'sidebar',
       },
     },
   ],
