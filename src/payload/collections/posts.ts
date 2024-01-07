@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types';
 import { BodyField, CategoryField, CoverImageField, ExcerptField, StatusField, TitleField } from '../fields/base';
 import { slugField } from '../fields/slug';
-import { isAdminOrEditor } from '../utilities/access';
+import { isAdminOrCreatedBy } from '../utilities/access';
 
 const PostsCollection: CollectionConfig = {
   slug: 'posts',
@@ -11,8 +11,8 @@ const PostsCollection: CollectionConfig = {
   },
   access: {
     read: () => true,
-    create: isAdminOrEditor,
-    update: isAdminOrEditor,
+    create: isAdminOrCreatedBy,
+    update: isAdminOrCreatedBy,
   },
   fields: [
     TitleField,
