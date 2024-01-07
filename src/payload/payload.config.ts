@@ -7,9 +7,9 @@ import CategoriesCollection from '@/payload/collections/categories';
 import PagesCollection from '@/payload/collections/pages';
 import PostsCollection from '@/payload/collections/posts';
 import UsersCollection from '@/payload/collections/users';
+import MediaCollection from '@/payload/collections/media-collection';
 import SeoPlugin from '@/payload/plugins/seo';
 import CloudStoragePlugin from '@/payload/plugins/storage';
-import MediaCollection from '@/payload/collections/media';
 
 export default buildConfig({
   plugins: [CloudStoragePlugin, SeoPlugin],
