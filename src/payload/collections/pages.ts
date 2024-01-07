@@ -6,6 +6,7 @@ import { isAdmin } from '../utilities/access';
 
 const PagesCollection: CollectionConfig = {
   slug: 'pages',
+  defaultSort: 'updateAt',
   admin: {
     defaultColumns: ['title', 'slug', 'status'],
   },

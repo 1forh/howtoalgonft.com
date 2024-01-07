@@ -21,7 +21,7 @@ export default buildConfig({
     bundler: webpackBundler(),
     user: UsersCollection.slug,
   },
-  collections: [UsersCollection, MediaCollection, CategoriesCollection, PostsCollection, PagesCollection],
+  collections: [UsersCollection, CategoriesCollection, PostsCollection, PagesCollection, MediaCollection],
   globals: [
     // Your globals here
   ],

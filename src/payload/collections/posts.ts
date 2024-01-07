@@ -5,7 +5,7 @@ import { isAdminOrCreatedBy } from '../utilities/access';
 
 const PostsCollection: CollectionConfig = {
   slug: 'posts',
-  defaultSort: '-updateAt',
+  defaultSort: 'updateAt',
   admin: {
     defaultColumns: ['title', 'slug', 'category', 'status', 'createdBy'],
   },
