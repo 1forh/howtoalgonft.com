@@ -8,6 +8,7 @@ export const revalidate = 300;
 export async function generateMetadata({ params }: { params: { slug: string[] } }): Promise<Metadata> {
   const slug = params.slug.join('/');
   const page = await getPost(slug);
+  if (!page) notFound();
   return page.meta;
 }
 

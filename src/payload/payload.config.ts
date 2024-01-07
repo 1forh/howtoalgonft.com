@@ -7,6 +7,7 @@ import CategoriesCollection from './collections/categories';
 import MediaCollection from './collections/media';
 import PagesCollection from './collections/pages';
 import PostsCollection from './collections/posts';
+import UsersCollection from './collections/users';
 import SeoPlugin from './plugins/seo';
 import CloudStoragePlugin from './plugins/storage';
 
@@ -18,8 +19,9 @@ export default buildConfig({
   editor: slateEditor({}),
   admin: {
     bundler: webpackBundler(),
+    user: UsersCollection.slug,
   },
-  collections: [MediaCollection, CategoriesCollection, PostsCollection, PagesCollection],
+  collections: [UsersCollection, MediaCollection, CategoriesCollection, PostsCollection, PagesCollection],
   globals: [
     // Your globals here
   ],
