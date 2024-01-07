@@ -3,13 +3,13 @@ import { mongooseAdapter } from '@payloadcms/db-mongodb';
 import { slateEditor } from '@payloadcms/richtext-slate';
 import path from 'path';
 import { buildConfig } from 'payload/config';
-import CategoriesCollection from './collections/categories';
-import MediaCollection from './collections/media';
-import PagesCollection from './collections/pages';
-import PostsCollection from './collections/posts';
-import UsersCollection from './collections/users';
-import SeoPlugin from './plugins/seo';
-import CloudStoragePlugin from './plugins/storage';
+import CategoriesCollection from '@/payload/collections/categories';
+import MediaCollection from '@/payload/collections/media';
+import PagesCollection from '@/payload/collections/pages';
+import PostsCollection from '@/payload/collections/posts';
+import UsersCollection from '@/payload/collections/users';
+import SeoPlugin from '@/payload/plugins/seo';
+import CloudStoragePlugin from '@/payload/plugins/storage';
 
 export default buildConfig({
   plugins: [CloudStoragePlugin, SeoPlugin],
