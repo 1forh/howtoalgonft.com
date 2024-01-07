@@ -8,7 +8,7 @@ const Users: CollectionConfig = {
     useAsTitle: 'email',
   },
   access: {
-    read: () => true,
+    read: isAdminOrSelf,
     update: isAdminOrSelf,
     create: isAdminOrSelf,
   },
