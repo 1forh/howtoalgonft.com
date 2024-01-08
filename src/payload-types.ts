@@ -8,15 +8,32 @@
 
 export interface Config {
   collections: {
-    media: Media;
+    users: User;
     categories: Category;
     posts: Post;
     pages: Page;
-    users: User;
+    media: Media;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
   globals: {};
+}
+export interface User {
+  id: string;
+  name?: string | null;
+  twitter?: string | null;
+  profileImage?: string | Media | null;
+  role: 'admin' | 'editor';
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  password: string | null;
 }
 export interface Media {
   id: string;
@@ -41,13 +58,15 @@ export interface Category {
 export interface Post {
   id: string;
   title: string;
-  coverImage: string | Media;
+  status?: ('draft' | 'published') | null;
   slug?: string | null;
+  coverImage: string | Media;
   category?: (string | null) | Category;
   excerpt: string;
   body: {
     [k: string]: unknown;
   }[];
+  createdBy?: (string | null) | User;
   meta?: {
     title?: string | null;
     description?: string | null;
@@ -59,6 +78,7 @@ export interface Post {
 export interface Page {
   id: string;
   title: string;
+  status?: ('draft' | 'published') | null;
   slug?: string | null;
   blocks?:
     | (
@@ -113,19 +133,6 @@ export interface Page {
   };
   updatedAt: string;
   createdAt: string;
-}
-export interface User {
-  id: string;
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  password: string | null;
 }
 export interface PayloadPreference {
   id: string;

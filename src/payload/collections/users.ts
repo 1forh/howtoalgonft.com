@@ -23,6 +23,11 @@ const Users: CollectionConfig = {
       type: 'text',
     },
     {
+      name: 'profileImage',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
       name: 'role',
       type: 'select',
       options: [
