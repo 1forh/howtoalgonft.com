@@ -4,13 +4,10 @@ import { useRouter } from 'next/navigation';
 import { useContext } from 'react';
 
 import { Post } from '@/payload-types';
-import { formatDate } from '../_lib/helpers';
+import ArticleAuthor from './ArticleAuthor';
 import PageContainer from './PageContainer';
 import { Prose } from './Prose';
 import { AppContext } from './Providers';
-import Image from 'next/image';
-import Link from 'next/link';
-import Icon from './Icon';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -39,36 +36,9 @@ export function ArticleLayout({ post }: { post: Post }) {
             </button>
           )}
           <article>
-            <header className='flex flex-col'>
+            <header className='flex flex-col gap-8'>
               <h1 className='text-4xl font-bold max-w-lg tracking-tight text-gray-800 dark:text-gray-100 sm:text-5xl !leading-[1.1]'>{post.title}</h1>
-
-              {typeof post.createdBy === 'object' && (
-                <div className='relative mt-8 flex items-center gap-x-4'>
-                  {typeof post.createdBy?.profileImage === 'object' && (
-                    <Image
-                      src={post.createdBy?.profileImage?.url!}
-                      alt={post.createdBy?.profileImage?.alt!}
-                      width={500}
-                      height={500}
-                      className='h-14 w-14 rounded-full bg-gray-50'
-                    />
-                  )}
-
-                  <div className='flex flex-col gap-1'>
-                    <p className='text-lg font-semibold text-white'>
-                      <span className='absolute inset-0' />
-                      <span className="sr-only">Written by</span>
-                      {post.createdBy?.name}
-                    </p>
-                    <p className='text-white/70'>
-                      <Link href={`https://x.com/${post.createdBy?.twitter}`} className='flex items-center gap-1'>
-                        <Icon name="twitter" />
-                        <span>{post.createdBy?.twitter}</span>
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-              )}
+              <ArticleAuthor post={post} />
             </header>
 
             <Prose className='mt-8' data-mdx-content content={post.body} />

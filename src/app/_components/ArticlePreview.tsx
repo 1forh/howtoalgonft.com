@@ -1,4 +1,5 @@
 import { Post } from '@/payload-types';
+import ArticleAuthor from './ArticleAuthor';
 import { Card } from './Card';
 
 type Props = {
@@ -16,6 +17,9 @@ const ArticlePreview = ({ post }: Props) => {
           <Card.Title href={`/posts/${post.slug}`}>{post.title}</Card.Title>
           <Card.Description>{post.excerpt}</Card.Description>
           <Card.Cta>Learn more</Card.Cta>
+          <div className="mt-4">
+            <ArticleAuthor size="sm" post={post} noLink />
+          </div>
         </div>
       </div>
     </Card>
