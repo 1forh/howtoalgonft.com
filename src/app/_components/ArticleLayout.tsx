@@ -37,7 +37,7 @@ export function ArticleLayout({ post }: { post: Post }) {
           )}
           <article>
             <header className='flex flex-col gap-8'>
-              <h1 className='text-4xl font-bold max-w-lg tracking-tight text-gray-800 dark:text-gray-100 sm:text-5xl !leading-[1.1]'>{post.title}</h1>
+              <h1 className='text-3xl font-bold max-w-lg tracking-tight text-gray-800 dark:text-gray-100 sm:text-5xl !leading-[1.1]'>{post.title}</h1>
               <ArticleAuthor post={post} />
             </header>
 

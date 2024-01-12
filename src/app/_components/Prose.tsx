@@ -10,7 +10,7 @@ export function Prose({ className, content, ...props }: Props) {
   if (!content) return <></>;
 
   return (
-    <div className={clsx(className, 'prose dark:prose-invert')} {...props}>
+    <div className={clsx(className, 'prose lg:prose-md dark:prose-invert')} {...props}>
       {serialize(content)}
     </div>
   );
