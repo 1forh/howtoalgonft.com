@@ -19,7 +19,7 @@
     "@fortawesome/pro-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@payloadcms/bundler-webpack": "^1.0.5",
-    "@payloadcms/db-mongodb": "^1.2.0",
+    "@payloadcms/db-mongodb": "^1.1.0",
     "@payloadcms/next-payload": "0.1.11",
     "@payloadcms/plugin-cloud-storage": "1.1.1",
     "@payloadcms/plugin-seo": "^1.0.15",
