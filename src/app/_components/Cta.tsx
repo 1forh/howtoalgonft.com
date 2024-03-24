@@ -32,11 +32,11 @@ export default function Cta() {
           </p>
           <div className='mt-10 flex items-center flex-col md:flex-row gap-5 justify-center gap-x-6 lg:justify-start'>
             <Link
-              href='https://www.nftexplorer.app'
+              href='https://www.asalytic.app'
               className='rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white flex items-center gap-2'
               target="_blank"
             >
-              Check out NFT Explorer
+              Check out Asalytic
               <Icon name="externalLink" className='w-3' />
             </Link>
             <Link href='/posts/finding-nfts-to-buy' className='text-sm font-semibold leading-6 text-white flex items-center gap-2'>
@@ -47,8 +47,8 @@ export default function Cta() {
         <div className='relative mt-16 h-80 lg:mt-8'>
           <Image
             className='absolute left-0 top-0 w-[45rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10'
-            src='/media/sections/nft-explorer.png'
-            alt='NFT Explorer screen'
+            src='/media/sections/asalytic.png'
+            alt='Asalytic screen'
             width={2410 / 3}
             height={1756 / 3}
           />
