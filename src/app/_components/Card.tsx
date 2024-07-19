@@ -42,7 +42,7 @@ Card.Icon = function CardIcon({
   ...props
 }: React.ComponentPropsWithoutRef<'svg'> & { name: IconName }) {
   return (
-    <div className="mb-8 w-7">
+    <div className="mb-8 text-2xl w-6 flex-shrink-0">
       <Icon name={name} {...props} />
     </div>
   )

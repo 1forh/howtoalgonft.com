@@ -86,7 +86,7 @@ const serialize = (children?: Children): React.ReactNode[] =>
         );
       case 'upload':
         // @ts-ignore
-        return <Image src={node.value!.url} alt={node.value!.url} key={i} width={node.value!.width / 2} height={node.value!.height / 2} />;
+        return <Image src={node.value!.url} alt={node.value!.url} key={i} width={node.value!.width / 2} height={node.value!.height / 2} className='mx-auto rounded-2xl' />;
 
       default:
         return <p key={i}>{serialize(node?.children)}</p>;

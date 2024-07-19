@@ -40,7 +40,7 @@ const PhotoCollage: Block = {
   ],
 };
 
-const icons = ['wallet', 'phone', 'cart', 'sparkles', 'store', 'objectsColumn'];
+const icons = ['wallet', 'phone', 'cart', 'sparkles', 'store', 'objectsColumn', 'cashRegister'];
 const Features: Block = {
   slug: 'features',
   labels: {

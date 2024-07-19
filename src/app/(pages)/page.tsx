@@ -7,8 +7,6 @@ import Gradients from '../_components/Gradients';
 import LogoCloud from '../_components/LogoCloud';
 import { getPage } from '../_lib/payload';
 
-export const revalidate = 300;
-
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage('home');
   if (!page) notFound();

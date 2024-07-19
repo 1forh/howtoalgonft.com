@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faSun, faMoon, faWallet, faMobile, faCartShopping, faSparkles, faStore, faObjectsColumn, faExternalLink, faArrowRightLong, faChevronRight } from '@fortawesome/pro-regular-svg-icons'
+import { faChevronDown, faSun, faMoon, faWallet, faMobile, faCartShopping, faSparkles, faStore, faObjectsColumn, faExternalLink, faArrowRightLong, faChevronRight, faCashRegister } from '@fortawesome/pro-regular-svg-icons'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 // import { faCaretDown, faCaretUp } from '@fortawesome/pro-solid-svg-icons'
 
@@ -17,6 +17,7 @@ const icons = {
   arrowRightLong: faArrowRightLong,
   chevronRight: faChevronRight,
   twitter: faXTwitter,
+  cashRegister: faCashRegister,
 }
 
 export type IconName = keyof typeof icons
