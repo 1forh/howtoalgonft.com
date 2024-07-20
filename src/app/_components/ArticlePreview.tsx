@@ -9,7 +9,7 @@ type Props = {
 const ArticlePreview = ({ post }: Props) => {
   return (
     <Card as='article'>
-      <div className="flex gap-16">
+      <div className="flex gap-8 lg:gap-16 flex-col md:flex-row">
         {typeof post.coverImage === 'object' && (
           <Card.Image src={post.coverImage.url!} alt={post.coverImage.alt} width={post.coverImage.width!} height={post.coverImage.height!} />
         )}
