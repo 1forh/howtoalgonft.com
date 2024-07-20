@@ -1,3 +1,5 @@
+'use client';
+
 import { Media } from '@/payload-types';
 import clsx from 'clsx';
 import Image from 'next/image';
@@ -14,7 +16,7 @@ type Props = {
 };
 
 const PhotoCollage = ({ content }: Props) => {
-  const photos = useMemo(() => (content.photos || []).sort(() => Math.random() - 0.5).slice(0, 5), []);
+  const photos = useMemo(() => (content.photos || []).sort(() => Math.random() - 0.5).slice(0, 5), [content.photos]);
   const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
