@@ -36,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID});
             `}
           </Script>
+          <Script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3709556784139074' crossOrigin='anonymous' />
         </>
       )}
       <body className="flex flex-col h-full min-h-[100dvh] font-body">
