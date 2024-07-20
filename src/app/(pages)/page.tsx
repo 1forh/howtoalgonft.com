@@ -6,6 +6,7 @@ import Cta from '../_components/Cta';
 import Gradients from '../_components/Gradients';
 import LogoCloud from '../_components/LogoCloud';
 import { getPage } from '../_lib/payload';
+import TiledCta from '../_components/TiledCta';
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage('home');
@@ -23,6 +24,7 @@ export default async function Home() {
       <BlocksLoader blocks={page.blocks} />
       <Cta />
       <LogoCloud />
+      <TiledCta />
     </div>
   );
 }
