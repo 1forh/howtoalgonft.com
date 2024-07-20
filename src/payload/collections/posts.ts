@@ -17,7 +17,7 @@ const PostsCollection: CollectionConfig = {
   fields: [
     TitleField,
     StatusField,
-    slugField(),
+    slugField('title', {}, true),
     CoverImageField,
     CategoryField,
     ExcerptField,

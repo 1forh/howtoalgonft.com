@@ -93,3 +93,17 @@ export const getPostsByCategoryId = async (categoryId: string) => {
   const posts = resp.docs;
   return posts;
 };
+
+export const getCategoryById = async (categoryId: string) => {
+  const payload = await getPayloadClient();
+  const resp = await payload.find({
+    collection: 'categories',
+    where: {
+      id: {
+        equals: categoryId,
+      },
+    },
+  });
+  const category = resp.docs[0];
+  return category;
+};
