@@ -33,16 +33,18 @@ export default function Features({ content }: Props) {
         </div>
 
         <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl'>
-          <dl className='grid max-w-xl grid-cols-1 gap-16 lg:max-w-none lg:grid-cols-3'>
+          <div className='max-w-2xl gap-16 lg:max-w-none flex-wrap flex justify-center w-full'>
             {(content.features || []).map((feature) => (
-              <Card key={feature.id}>
-                <Card.Icon name={feature.icon} />
-                <Card.Title href={`/${feature.link}`}>{feature.title}</Card.Title>
-                <Card.Description>{feature.description}</Card.Description>
-                <Card.Cta>Learn more</Card.Cta>
-              </Card>
+              <div key={feature.id} className='md:max-w-[45%] lg:max-w-[29%] w-full'>
+                <Card>
+                  <Card.Icon name={feature.icon} />
+                  <Card.Title href={`/${feature.link}`}>{feature.title}</Card.Title>
+                  <Card.Description>{feature.description}</Card.Description>
+                  <Card.Cta>Learn more</Card.Cta>
+                </Card>
+              </div>
             ))}
-          </dl>
+          </div>
         </div>
       </PageContainer>
     </div>

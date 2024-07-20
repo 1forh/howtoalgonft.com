@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={clsx(...fonts, 'antialiased, font-body scroll-smooth overflow-x-hidden')} suppressHydrationWarning>
+    <html lang='en' className={clsx(...fonts, 'antialiased scroll-smooth overflow-x-hidden')} suppressHydrationWarning>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
         <>
           <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}></Script>
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Script>
         </>
       )}
-      <body className="flex flex-col h-full min-h-[100dvh]">
+      <body className="flex flex-col h-full min-h-[100dvh] font-body">
         <Providers>
           {children}
         </Providers>
