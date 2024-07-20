@@ -39,9 +39,9 @@ export default function Cta() {
               Check out Asalytic
               <Icon name="externalLink" className='w-3' />
             </Link>
-            <Link href='/posts/finding-nfts-to-buy' className='text-sm font-semibold leading-6 text-white flex items-center gap-2'>
+            {/* <Link href='/posts/finding-nfts-to-buy' className='text-sm font-semibold leading-6 text-white flex items-center gap-2'>
               Learn more <Icon name="arrowRightLong" className='w-4' />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className='relative mt-16 h-80 lg:mt-8'>

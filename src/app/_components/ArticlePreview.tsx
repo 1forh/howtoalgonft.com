@@ -14,7 +14,7 @@ const ArticlePreview = ({ post }: Props) => {
           <Card.Image src={post.coverImage.url!} alt={post.coverImage.alt} width={post.coverImage.width!} height={post.coverImage.height!} />
         )}
         <div className='flex flex-col justify-center'>
-          <Card.Title href={`/posts/${post.slug}`}>{post.title}</Card.Title>
+          <Card.Title href={`${post.slug}`}>{post.title}</Card.Title>
           <Card.Description>{post.excerpt}</Card.Description>
           <Card.Cta>Learn more</Card.Cta>
           <div className="mt-4">
