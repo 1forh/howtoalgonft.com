@@ -7,6 +7,18 @@ const isPublished = {
   },
 };
 
+export const getPages = async () => {
+  const payload = await getPayloadClient();
+  const resp = await payload.find({
+    collection: 'pages',
+    where: {
+      ...isPublished,
+    },
+  });
+  const pages = resp.docs;
+  return pages;
+};
+
 export const getPage = async (slug: string) => {
   const payload = await getPayloadClient();
 
@@ -53,6 +65,18 @@ export const getPost = async (slug: string) => {
     ...post,
     meta: formatMetadata(post.meta),
   };
+};
+
+export const getPosts = async () => {
+  const payload = await getPayloadClient();
+  const resp = await payload.find({
+    collection: 'posts',
+    where: {
+      ...isPublished,
+    },
+  });
+  const posts = resp.docs;
+  return posts;
 };
 
 export const getPostsByCategoryId = async (categoryId: string) => {
