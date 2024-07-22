@@ -1,5 +1,3 @@
-'use client';
-
 import { Media } from '@/payload-types';
 import clsx from 'clsx';
 import Image from 'next/image';
