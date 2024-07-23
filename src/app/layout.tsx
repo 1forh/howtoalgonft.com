@@ -1,5 +1,5 @@
 import { SITE_NAME } from '@/constants';
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Providers } from './_components/Providers';
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en' className={clsx(...fonts, 'antialiased scroll-smooth overflow-x-hidden')} suppressHydrationWarning>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
       )}
 
       <Script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3709556784139074' crossOrigin='anonymous' />
