@@ -16,8 +16,8 @@ export default function LogoCloud() {
           </Link>
           <Link href="https://exa.market/">
             <img
-              className='col-span-2 max-h-10 w-full object-contain lg:col-span-1'
-              src='/media/logos/exa.webp'
+              className='col-span-2 max-h-20 w-full object-contain lg:col-span-1'
+              src='/media/logos/exa.png'
               alt='EXA Market'
             />
           </Link>
