@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={clsx(...fonts, 'antialiased scroll-smooth overflow-x-hidden')} suppressHydrationWarning>
+    <html lang='en' className={clsx(...fonts, 'antialiased scroll-smooth overflow-x-hidden dark')} suppressHydrationWarning>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
       )}
