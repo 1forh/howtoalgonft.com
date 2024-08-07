@@ -74,6 +74,7 @@ export const getPosts = async () => {
     where: {
       ...isPublished,
     },
+    limit: 50,
   });
   const posts = resp.docs;
   return posts;
