@@ -13,12 +13,12 @@ function Footer() {
             </svg>{' '}
             Created by{' '}
             <a
-              href={'https://twitter.com/MinnerAlgo'}
+              href={'https://www.minnerlabs.com'}
               target={'_blank'}
               rel='noreferrer'
               className='font-bold underline transition duration-200 text-primary-500 hover:text-primary-700'
             >
-              minner.algo
+              Minner Labs
             </a>{' '}
           </p>
         </div>
